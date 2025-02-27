@@ -119,6 +119,8 @@ footer #contact-info span {
 footer #contact-info span img {
     max-height: 20px;
     margin-right: 5px;
+    position: relative;
+    top: 5px;
 }
 
 footer #contact-info span a {
