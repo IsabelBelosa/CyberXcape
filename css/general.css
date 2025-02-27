@@ -17,20 +17,20 @@ header #superior {
     align-items: center;
     background-color: #000000; 
     padding-right: 40px;
+    padding-left: 40px;
     border: none; /* Elimina los bordes blancos */
 }
-
 header #superior #logo {
-    max-height: 100px; /* Ajusta el tamaño del logo */
     margin-left: 0;
     padding-left: 0;
+    display: flex;
+    align-items: center;
 }
 
 header #superior #titulo {
     font-size: 2em; /* Ajusta el tamaño del título con em ya que se adapta a las modicaciones de nuestra fuente de google*/
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    padding-right: 100px;
 }
 
 header #superior #titulo #X {
@@ -88,6 +88,8 @@ footer {
 
 footer #logo-copy img{
     max-height: 70px;
+    padding-right: 100px;
+    flex-direction: column;
 }
 
 footer #logo-copy{
