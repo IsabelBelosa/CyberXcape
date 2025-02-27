@@ -109,7 +109,7 @@ footer #titulo1 #X1 {
 footer #contact-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-star;
 }
 
 footer #contact-info span {
