@@ -30,7 +30,7 @@ header #superior #titulo {
     font-size: 2em; /* Ajusta el tamaño del título con em ya que se adapta a las modicaciones de nuestra fuente de google*/
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    text-align: center;
+    padding-right: 100px;
 }
 
 header #superior #titulo #X {
