@@ -22,6 +22,8 @@ header #superior {
 
 header #superior #logo {
     max-height: 100px; /* Ajusta el tamaño del logo */
+    margin-left: 0;
+    padding-left: 0;
 }
 
 header #superior #titulo {
