@@ -17,7 +17,6 @@ header #superior {
     align-items: center;
     background-color: #000000; 
     padding-right: 40px;
-    padding-left: 40px;
     border: none; /* Elimina los bordes blancos */
 }
 
@@ -29,7 +28,7 @@ header #superior #titulo {
     font-size: 2em; /* Ajusta el tamaño del título con em ya que se adapta a las modicaciones de nuestra fuente de google*/
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    padding-right: 100px;
+    text-align: center;
 }
 
 header #superior #titulo #X {
@@ -81,7 +80,6 @@ footer {
     padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 20px;
 }
 
 footer #logo-copy img{
