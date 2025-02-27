@@ -1,0 +1,127 @@
+/* Estilos generales */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+/*Estilos header*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header #superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; 
+    padding-right: 40px;
+    padding-left: 40px;
+    border: none; /* Elimina los bordes blancos */
+}
+
+header #superior #logo {
+    max-height: 100px; /* Ajusta el tamaño del logo */
+}
+
+header #superior #titulo {
+    font-size: 2em; /* Ajusta el tamaño del título con em ya que se adapta a las modicaciones de nuestra fuente de google*/
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding-right: 100px;
+}
+
+header #superior #titulo #X {
+    font-size: 3em;
+    color: #EB2CDE; /* Color rosa para la "X" */
+}
+
+header #superior #apariencia {
+    max-height: 40px; /* Ajusta el tamaño de la imagen de apariencia */
+}
+
+header #inferior {
+    background-color: #B1B1B1;
+}
+
+header #inferior nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header #inferior nav ul li {
+    padding: 10px 20px;
+}
+
+header #inferior nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+header #inferior nav ul li a:hover,
+header #inferior nav ul li a:focus,
+header #inferior nav ul li a.active {
+    border-bottom: 2px solid #000000;
+}
+
+/*Estilos footer*/
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+footer #logo-copy img{
+    max-height: 70px;
+}
+
+footer #logo-copy{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #titulo1 {
+    font-size: 1em; /* Ajusta el tamaño del título */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding-left: 150px;
+    margin-top: 20px;
+}
+
+footer #titulo1 #X1 {
+    font-size: 3em;
+    color: #EB2CDE;
+}
+
+footer #contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer #contact-info span {
+    margin-bottom: 10px;
+}
+
+footer #contact-info span img {
+    max-height: 20px;
+    margin-right: 5px;
+}
+
+footer #contact-info span a {
+    color: #ffffff;
+    text-decoration: none;
+}
