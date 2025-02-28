@@ -3,13 +3,8 @@ body {
     background-color: #2e2e2e;
     color: white;
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-#reserva-form{
-    display: flex;
-}
 
 /* Estilos para los títulos */
 h1, h2, h3, h4, h5, h6 {
@@ -17,13 +12,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sección de reservas */
+
+#reserva-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .salareserva {
     display: flex;
     align-items: center;
     flex-direction: right;
     flex-direction: column;
     text-align: center;
-    margin-top: 190px;
 }
 
 .salareserva h1 {
@@ -49,17 +50,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: 'Jockey One', sans-serif;
 }
 
 .salareserva #detalles {
     border: 2px solid #EB2CDE;
     background-color: #000000;
+    font-size: 1em;
     padding-left: 40px;
     padding-right: 40px;
     display: inline-block;
-    border-radius: 5px;
     text-align: center;
 }
 
@@ -97,3 +98,4 @@ input[type="submit"] {
     margin-top: 15px;
     cursor: pointer;
 }
+

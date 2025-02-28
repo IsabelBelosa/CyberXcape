@@ -1,10 +1,11 @@
 /* Estilos generales */
-body {
+body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
+    width: max-content;
 }
 /*Estilos header*/
 header {
@@ -85,6 +86,8 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
+    position: s;
+    bottom: 0;
 }
 
 footer #logo-copy img{
@@ -132,4 +135,22 @@ footer #contact-info span img {
 footer #contact-info span a {
     color: #ffffff;
     text-decoration: none;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #superior {
+        flex-direction: column;
+        text-align: center;
+    }
+    #inferior {
+        flex-direction: column;
+        align-items: center;
+    }
 }
