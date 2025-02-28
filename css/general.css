@@ -74,30 +74,26 @@ header #inferior nav ul li a.active {
 
 
 
-/* Estilos footer */
+/*Estilos footer*/
+
 footer {
     background-color: #000000;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
-    bottom: 0;
 }
 
-footer #logo-copy img {
-    padding-left: 50px;
-    flex-direction: center;
+footer #logo-copy img{
+    max-height: 70px;
 }
 
-footer #logo-copy {
+footer #logo-copy{
     display: flex;
     flex-direction: column;
-}
-
-footer #logo-copy span {
-    font-size: 0.8em; /* Ajusta el tamaño del texto según tus necesidades */
 }
 
 footer #titulo1 {
@@ -105,7 +101,7 @@ footer #titulo1 {
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     padding-left: 100px;
-    position: relative;
+    margin-top: 20px;
 }
 
 footer #titulo1 #X1 {
@@ -116,7 +112,7 @@ footer #titulo1 #X1 {
 footer #contact-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-star;
 }
 
 footer #contact-info span {
