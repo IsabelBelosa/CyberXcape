@@ -199,17 +199,18 @@ details div p {
     max-width: 90%;
 }
 
-/* Responsividad */
+/* Ajuste responsivo para pantallas pequeñas 
 @media (max-width: 900px) {
     .Noticia1, .Noticia2, .Noticia3 {
-        width: 48%; /* En pantallas medianas, ocuparán el 48% */
-    }
-}
+        max-width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    /*}*/
+/*}*/
 
 /*@media (max-width: 600px) {
     .Noticia1, .Noticia2, .Noticia3 {
-        width: 100%; /* En pantallas pequeñas, ocuparán el 100%}} */
-
+        max-width: 100%; /* Una columna en pantallas pequeñas */
+    /*}*/
+/*}*/
 
 
 /* FAQ */
