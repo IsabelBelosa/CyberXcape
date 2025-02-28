@@ -13,19 +13,9 @@ body {
 }
 
 /*Estilo para titulos*/
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6, p {
     font-family: 'Jockey One', sans-serif;
     font-size: 2em;
-    color: #7ADEF5;
-    border: 2px solid #EB2CDE;
-    background-color: #000000;
-    padding: 10px;
-}
-
-p{
-    font-family: 'Jockey One', sans-serif;
-    font-size: 2em;
-    color: #7ADEF5;
 }
 
 nav ul {
@@ -125,6 +115,14 @@ nav ul li a {
 }
 
 
+h2, h3 {
+    color: #7ADEF5;
+    font-size: 2em;
+    border: 2px solid #EB2CDE;
+    background-color: #000000;
+    padding: 10px;
+}
+
 /* Noticias */
 aside {
     margin: 0;
@@ -166,16 +164,14 @@ details > div {
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
-
 #vernoticias {
     flex-direction: row;
     align-items: stretch;
 }
-
 /* Estilo de cada noticia */
 .Noticia1, .Noticia2, .Noticia3 {
     width: 32%; /* Hace que cada noticia ocupe un 32% del ancho del contenedor */
-    background: #444; /* Fondo para todas las noticias */
+    background: black; /* Fondo para todas las noticias */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -247,18 +243,19 @@ details div p {
     position: relative;
     align-items: stretch;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
 }
 
 #preguntas details {
     margin: 10px 0;
-    color: #7ADEF5;
 }
 
-summary {
+
+#preguntas summary {
     cursor: pointer;
+    font-family: 'Jockey One', sans-serif;
     font-weight: bold;
-    color: white;
+    font-size: 2em;
+    color: #7ADEF5;
     align-items: center;
 }
 
