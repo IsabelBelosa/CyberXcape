@@ -87,9 +87,8 @@ footer {
 }
 
 footer #logo-copy img{
-    max-height: 70px;
-    padding-right: 100px;
-    flex-direction: column;
+    padding-left: 50px;
+    flex-direction: center;
 }
 
 footer #logo-copy{
@@ -97,12 +96,16 @@ footer #logo-copy{
     flex-direction: column;
 }
 
+footer #logo-copy span {
+    font-size: 0.8em; /* Ajusta el tamaño del texto según tus necesidades */
+}
+
 footer #titulo1 {
     font-size: 1em; /* Ajusta el tamaño del título */
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     padding-left: 100px;
-    margin-top: 20px;
+
 }
 
 footer #titulo1 #X1 {
