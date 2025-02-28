@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+#reserva-form{
+    display: flex;
+}
+
 /* Estilos para los títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Jockey One', sans-serif;
@@ -24,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .salareserva h1 {
     color: #7ADEF5;
-    font-size: 40px;
+    font-size: 2em;
     border: 2px solid #EB2CDE;
     background-color: #000000;
     padding: 10px;
@@ -43,7 +47,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     text-decoration: none;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
+    font-size: 1.5em;
     font-family: 'Jockey One', sans-serif;
 }
 
@@ -59,11 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Formulario de reserva*/
 .formulario {
-    background-color: #1f1f1f;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    width: 40%;
-    margin-left: auto;
+    height: fit-content;
 }
 
 form {

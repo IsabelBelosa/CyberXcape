@@ -46,70 +46,72 @@
     </header>
     <!--Cuerpo de la página-->
     <main>
-        <!--Introducción a la página de reservas-->
-        <div class="salareserva">
-            <div>
-                <!--Titulo y descripcion de la sala-->
-                <h1>Neutral Hack</h1>
-                <img src="./images/NeutralHack.png" alt="Sala 1 Neutral Hack" id="neutralhack">
+        <div id="reserva-form">
+            <!--Introducción a la página de reservas-->
+            <div class="salareserva">
+                <div>
+                    <!--Titulo y descripcion de la sala-->
+                    <h1>Neutral Hack</h1>
+                    <img src="./images/NeutralHack.png" alt="Sala 1 Neutral Hack" id="neutralhack">
+                </div>
+                <!-- Enlace a la página de salas para ver más información-->
+                <a href="salas.html">+ VER MÁS INFO</a>
+                <div id="detalles">
+                    <!-- Detalles sobre la sala: aforo, duración y edad mínima -->
+                    <h2>Aforo máximo: 8 personas</h2>
+                    <h2>Duración: 60 minutos</h2>
+                    <h2>Edad mínima: 10 años</h2>
+                </div>
             </div>
-            <div id="detalles">
-                <!-- Detalles sobre la sala: aforo, duración y edad mínima -->
-                <h2>Aforo máximo: 8 personas</h2>
-                <h2>Duración: 60 minutos</h2>
-                <h2>Edad mínima: 10 años</h2>
+            <!--Formulario para realizar la reserva-->
+            <div class="formulario">
+                <form>
+                    <!--Opción para introducir numero de jugadores-->
+                    <label for="inputjugadores">Número de jugadores:</label>
+                    <input type="number" placeholder="Introduce num. jugadores" id="inputjugadores" name="inputjugadores">
+                    <!--Opción para seleccionar sala-->
+                    <label for="inputsalas">Selecciona una sala:</label>
+                    <select name="inputsalas" id="inputsalas">
+                        <option value="1" selected>NeutralHack</option>
+                        <option value="2">Estacion Omega</option>
+                        <option value="3">Experimento X-33</option>
+                    </select>
+                    <!--Opción para seleccionar dificultad-->
+                    <label for="inputdificultad">Selecciona una dificultad:</label>
+                    <select name="inputdificultad" id="inputdificultad">
+                        <option value="1" selected>Facil</option>
+                        <option value="2">Intermedio</option>
+                        <option value="3">Dificil</option>
+                    </select>
+
+                    <!-- Campos de texto para introducir nombre, apellidos y correo -->
+
+                    <label for="inputnombre">Introduce tu nombre:</label>
+                    <input type="text" placeholder="Introduce tu nombre" id="inputnombre" name="inputnombre">
+                    
+                    <label for="inputapellidos">Introduce tus apellidos:</label>
+                    <input type="text" placeholder="Introduce tus apellidos" id="inputapellidos" name="inputapellidos">
+
+                    <label for="inputcorreo">Introduce tu correo:</label>
+                    <input type="text" placeholder="Introduce tu correo" id="inputcorreo" name="inputcorreo">
+
+                    <!-- Opción para seleccionar fecha y hora -->
+                    <label for="inputfecha">Selecciona fecha:</label>
+                    <input type="date" id="inputfecha" name="inputfecha">
+
+                    <span>Selecciona hora:</span>
+                    <label for="inputhora1">12:00h</label>
+                    <input type="checkbox" name="inputhora1" id="inputhora1" value="1">
+                    <label for="inputhora1">16:30h</label>
+                    <input type="checkbox" name="inputhora2" id="inputhora2" value="2">
+                    <label for="inputhora2">18:00h</label>
+                    <input type="checkbox" name="inputhora3" id="inputhora3" value="3"> 
+
+                    <!-- Botón para enviar el formulario -->
+                    <input type="submit" value="Reservar">
+                    <span>(El pago se realizará de forma presencial en el local)</span>
+                </form>
             </div>
-            <!-- Enlace a la página de salas para ver más información-->
-            <a href="salas.html">+ VER MÁS INFO</a>
-        </div>
-        <!--Formulario para realizar la reserva-->
-        <div class="formulario">
-            <form>
-                <!--Opción para introducir numero de jugadores-->
-                <label for="inputjugadores">Número de jugadores:</label>
-                <input type="number" placeholder="Introduce num. jugadores" id="inputjugadores" name="inputjugadores">
-                <!--Opción para seleccionar sala-->
-                <label for="inputsalas">Selecciona una sala:</label>
-                <select name="inputsalas" id="inputsalas">
-                    <option value="1" selected>NeutralHack</option>
-                    <option value="2">Estacion Omega</option>
-                    <option value="3">Experimento X-33</option>
-                </select>
-                <!--Opción para seleccionar dificultad-->
-                <label for="inputdificultad">Selecciona una dificultad:</label>
-                <select name="inputdificultad" id="inputdificultad">
-                    <option value="1" selected>Facil</option>
-                    <option value="2">Intermedio</option>
-                    <option value="3">Dificil</option>
-                </select>
-
-                <!-- Campos de texto para introducir nombre, apellidos y correo -->
-
-                <label for="inputnombre">Introduce tu nombre:</label>
-                <input type="text" placeholder="Introduce tu nombre" id="inputnombre" name="inputnombre">
-                
-                <label for="inputapellidos">Introduce tus apellidos:</label>
-                <input type="text" placeholder="Introduce tus apellidos" id="inputapellidos" name="inputapellidos">
-
-                <label for="inputcorreo">Introduce tu correo:</label>
-                <input type="text" placeholder="Introduce tu correo" id="inputcorreo" name="inputcorreo">
-
-                <!-- Opción para seleccionar fecha y hora -->
-                <label for="inputfecha">Selecciona fecha:</label>
-                <input type="date" id="inputfecha" name="inputfecha">
- 
-                <span>Selecciona hora:</span>
-                <label for="inputhora1">12:00h</label>
-                <input type="checkbox" name="inputhora1" id="inputhora1" value="1">
-                <label for="inputhora1">16:30h</label>
-                <input type="checkbox" name="inputhora2" id="inputhora2" value="2">
-                <label for="inputhora2">18:00h</label>
-                <input type="checkbox" name="inputhora3" id="inputhora3" value="3"> 
-
-                <!-- Botón para enviar el formulario -->
-                <input type="submit" value="Reservar">
-                <span>(El pago se realizará de forma presencial en el local)</span>
-            </form>
         </div>
     </main>
     <!-- Pie de página con información sobre CyberXcape -->
