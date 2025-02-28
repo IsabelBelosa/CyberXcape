@@ -72,7 +72,6 @@ header #inferior nav ul li a.active {
     border-bottom: 2px solid #000000;
 }
 
-/*Estilos footer*/
 
 /*Estilos footer*/
 
@@ -81,7 +80,6 @@ footer {
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
