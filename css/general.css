@@ -45,7 +45,7 @@ header #superior #apariencia {
 }
 
 header #inferior {
-    background-color: #B1B1B1;
+    background-color: #B1B1B1; /*#D3D3D3*/
 }
 
 header #inferior nav ul {
