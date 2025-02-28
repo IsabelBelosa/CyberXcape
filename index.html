@@ -41,16 +41,20 @@
     </header>
     <main>
         <!-- Introducción: Presentación visual y título atractivo -->
-        <div class="Introduccion">
+        <div id="introduccion">
             <img src="./images/cronometro.gif" alt="Cronometro rosa" id="cronometro"> <!-- Imagen de un cronómetro rosa -->
-            <div class="text-overlay">¿Podrás vencer a la IA antes de que sea demasiado tarde?</div> 
+            <div id="texto">¿Podrás vencer a la IA antes de que sea demasiado tarde?</div> 
         </div>
-        <div id="Novedadesycomojugar"> <!-- Sección de novedades y cómo jugar -->
-            <h2>NOVEDADES</h2> 
-            <p>¡EVENTO TEMÁTICO! </p> <!-- Novedad -->
-            <p>ORGANIZAMOS NUEVAS PARTIDAS ESPECIALES CON DESAFÍOS Y VERSIONES ALTERNATIVAS DEL JUEGO</p>
-            <h3>¿CÓMO JUGAR?</h3> <!-- Título de cómo jugar -->
-            <p>FORMA UN EQUIPO, SIGUE LAS PISTAS, RESUELVE ACERTIJOS Y ESCAPA ANTES DE QUE SE ACABE EL TIEMPO Y LA IA TE ATRAPE</p>    
+        <div id="novedadesycomojugar"> <!-- Sección de novedades y cómo jugar -->
+            <div id="Novedades">
+                <h2>NOVEDADES</h2> 
+                <p>¡EVENTO TEMÁTICO! </p> <!-- Novedad -->
+                <p>ORGANIZAMOS NUEVAS PARTIDAS ESPECIALES CON DESAFÍOS Y VERSIONES ALTERNATIVAS DEL JUEGO</p>
+            </div>
+            <div id="comojugar">
+                <h2>¿CÓMO JUGAR?</h2> <!-- Título de cómo jugar -->
+                <p>FORMA UN EQUIPO, SIGUE LAS PISTAS, RESUELVE ACERTIJOS Y ESCAPA ANTES DE QUE SE ACABE EL TIEMPO Y LA IA TE ATRAPE</p> 
+            </div>
         </div>
         <aside class="NOTICIAS"> <!-- Sección de noticias complementaria (uso de aside)-->
             <details>
@@ -69,34 +73,37 @@
                 </div>
             </details>
         </aside>
-        <div class="FAQ"> <!-- Sección de preguntas frecuentes -->
-            <span><h3>FAQ</h3></span> <!-- Cada pregunta frecuente está dentro de un <div> con respuestas, siendo esta un summary (desplegable interactivo) -->
-                <details>
-                    <summary>+ ¿ES APTO PARA PRINCIPIANTES?</summary>
-                    <p>El juego tiene pistas y ayudas para que todos disfruten la experiencia.</p>
-                </details>
-        
-                <details>
-                    <summary>+ ¿HAY EDADES RECOMENDADAS?</summary>
-                    <p>Recomendado para mayores de 12 años. Los menores pueden participar acompañados de un adulto.</p>
-                </details>
-        
-                <details>
-                    <summary>+ ¿PODEMOS JUGAR EN DIFERENTES IDIOMAS?</summary>
-                    <p>Nuestra IA se adapta a distintos idiomas para que todos puedan participar.</p>
-                </details>
-        
-                <details>
-                    <summary>+ ¿QUÉ PASA SI NO LOGRAMOS SALIR A TIEMPO?</summary>
-                    <p>La IA te atrapará… pero no te preocupes, nuestro equipo te guiará fuera de la sala.</p>
-                </details>
-        
-                <details>
-                    <summary>+ ¿ES ACCESIBLE PARA PERSONAS CON MOVILIDAD REDUCIDA?</summary>
-                    <p>Nuestro escape room está diseñado para que todos puedan desafiar a la IA.</p>
-                </details>
 
-        </div>        
+        <div id="faq"> <!-- Sección de preguntas frecuentes -->
+            <img src="./images/candado.jpg" alt="Candado" id="candado"> <!-- Imagen de un candado para el fondo-->
+            <div id="preguntas">
+                <span><h3>FAQ</h3></span> <!-- Cada pregunta frecuente está dentro de un <div> con respuestas, siendo esta un summary (desplegable interactivo) -->
+                    <details>
+                        <summary>+ ¿ES APTO PARA PRINCIPIANTES?</summary>
+                        <p>El juego tiene pistas y ayudas para que todos disfruten la experiencia.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿HAY EDADES RECOMENDADAS?</summary>
+                        <p>Recomendado para mayores de 12 años. Los menores pueden participar acompañados de un adulto.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿PODEMOS JUGAR EN DIFERENTES IDIOMAS?</summary>
+                        <p>Nuestra IA se adapta a distintos idiomas para que todos puedan participar.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿QUÉ PASA SI NO LOGRAMOS SALIR A TIEMPO?</summary>
+                        <p>La IA te atrapará… pero no te preocupes, nuestro equipo te guiará fuera de la sala.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿ES ACCESIBLE PARA PERSONAS CON MOVILIDAD REDUCIDA?</summary>
+                        <p>Nuestro escape room está diseñado para que todos puedan desafiar a la IA.</p>
+                    </details>
+                </div>
+            </div>        
     </main>
     <footer>
         <div id="logo-copy">

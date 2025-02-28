@@ -7,9 +7,14 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #2e2e2e;
+    color: white;
     text-align: center;
+}
+
+/*Estilo para titulos*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jockey One', sans-serif;
 }
 
 nav ul {
@@ -25,48 +30,78 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Introducción */
-.Introduccion {
-    position: relative;
-    display: inline-block; 
-}
-
-.Introduccion img {
-    max-width: 100%;
-    height: auto;
-}
-
-.gif {
+/* Sección Introducción */
+#introduccion {
+    padding: 0; 
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Esto es necesario para posicionar el texto encima */
     width: 100%; 
-    height: auto;
+    height: 100vh; 
+    overflow: hidden; /* Previene que la imagen o el contenido se desborde */
 }
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Color del texto, puedes cambiarlo */
-    font-size: 24px; /* Ajusta el tamaño del texto */
-    text-align: center;
+#introduccion img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegura que la imagen quede detrás del texto */
+    display: flex;
+}
+
+#introduccion #texto {
+    position: absolute; 
+    top: 50%; /* Coloca el texto en el centro vertical */
+    left: 50%; /* Coloca el texto en el centro horizontal */
+    transform: translate(-50%, -50%); /* Asegura que el centro sea exacto */
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 5em;
     font-weight: bold;
+    text-align: center;
+    z-index: -1; /* Asegura que el texto se muestre sobre la imagen o el cronómetro */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
-
 
 /* Novedades y cómo jugar */
-#Novedadesycomojugar {
+#novedadesycomojugar {
     padding: 20px;
     background: #222;
     margin: 20px auto;
-    max-width: 800px;
+    width: 100%;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las secciones */
+    margin-bottom: 20px;
 }
+
+#novedadesycomojugar #novedades{
+    margin-bottom: 20px;
+    text-align: left;
+    top: auto;
+    width: 48%;
+}
+
+#novedadesycomojugar #comojugar {
+    margin-bottom: 20px;
+    text-align: right;
+    bottom: auto;
+    width: 48%;
+}
+
+
 
 h2, h3 {
     color: fuchsia;
 }
 
-/* Noticias y FAQ */
+/* Noticias */
 aside {
     margin: 20px auto;
     max-width: 800px;
@@ -88,6 +123,40 @@ aside {
 }
 
 /* FAQ */
+
+#faq {
+    padding: 20px;
+    background: #222;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Previne que la imagen o el contenido se desborde */
+}
+
+#faq #candado {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    z-index: -1; 
+    background-color: rgba(177, 177, 177, 0.57); 
+}
+
+#faq #preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 details {
     margin: 10px 0;
 }
@@ -107,6 +176,10 @@ summary {
         gap: 10px;
     }
     #superior {
+        flex-direction: column;
+        align-items: center;
+    }
+    #inferior {
         flex-direction: column;
         align-items: center;
     }
