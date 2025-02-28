@@ -13,8 +13,9 @@ body {
 }
 
 /*Estilo para titulos*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font-family: 'Jockey One', sans-serif;
+    font-size: 2em;
 }
 
 nav ul {
@@ -33,7 +34,6 @@ nav ul li a {
 /* Sección Introducción */
 #introduccion {
     padding: 0; 
-    margin-top: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,34 +67,53 @@ nav ul li a {
     z-index: -1; /* Asegura que el texto se muestre sobre la imagen o el cronómetro */
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    display: flex;
+
 }
 
 /* Novedades y cómo jugar */
-#novedadesycomojugar {
+#novedadesycomojugar { 
     padding: 20px;
-    background: #222;
-    margin: 20px auto;
     width: 100%;
-    border-radius: 10px;
     display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre las secciones */
-    margin-bottom: 20px;
+    flex-direction: column; 
+    justify-content: flex-start; 
 }
 
-#novedadesycomojugar #novedades{
-    margin-bottom: 20px;
+#novedadesycomojugar #novedades {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
     text-align: left;
-    top: auto;
-    width: 48%;
+}
+
+#novedadesycomojugar #novedades2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    width: 100%; 
+    text-align: right;
+    margin-left: auto; 
 }
 
 #novedadesycomojugar #comojugar {
-    margin-bottom: 20px;
-    text-align: right;
-    bottom: auto;
-    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 20px; 
+    text-align: left;
 }
 
+#novedadesycomojugar #comojugar2 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100%; 
+    text-align: right;
+}
 
 
 h2, h3 {
@@ -126,10 +145,6 @@ aside {
 
 #faq {
     padding: 20px;
-    background: #222;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
     position: relative;
     overflow: hidden; /* Previne que la imagen o el contenido se desborde */
 }
@@ -137,12 +152,20 @@ aside {
 #faq #candado {
     width: 100%;
     height: 200px; /* Ajusta la altura de la imagen */
-    object-fit: cover; 
-    position: absolute;
-    bottom: 0; 
+    object-fit: cover;
+    position: absolute; /* Cambié 'relative' a 'absolute' para asegurarte de que esté posicionado respecto al contenedor */
+    bottom: 0;
     left: 0;
-    z-index: -1; 
-    background-color: rgba(177, 177, 177, 0.57); 
+    z-index: -1; /* La imagen estará detrás del contenido */
+}
+
+#faq #preguntas span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Asegura que las preguntas estén encima de la imagen */
+    position: relative;
 }
 
 #faq #preguntas {
@@ -150,14 +173,11 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Asegura que las preguntas estén encima de la imagen */
+    position: relative;
 }
 
-
-details {
+#preguntas details {
     margin: 10px 0;
 }
 
@@ -167,6 +187,7 @@ summary {
     color: fuchsia;
     align-items: center;
 }
+
 
 
 /* Responsividad */
