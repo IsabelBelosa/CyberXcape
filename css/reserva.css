@@ -8,7 +8,7 @@ body {
 }
 
 /* Estilos para los títulos */
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Jockey One', sans-serif;
 }
 
@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6, a {
     text-decoration: none;
     margin-top: 10px;
     border-radius: 5px;
+    font-family: 'Jockey One', sans-serif;
 }
 
 .salareserva #detalles {
