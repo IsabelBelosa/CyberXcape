@@ -5,7 +5,6 @@ body{
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
-    width: max-content;
 }
 /*Estilos header*/
 header {
@@ -139,7 +138,12 @@ footer #contact-info span a {
 
 
 /* Responsividad */
-@media (max-width: 768px) {
+@media (max-width: 955px) {
+
+    body{
+        width: max-content;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
