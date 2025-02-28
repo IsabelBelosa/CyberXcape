@@ -1,0 +1,113 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Introducción */
+.Introduccion {
+    position: relative;
+    display: inline-block; 
+}
+
+.Introduccion img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gif {
+    width: 100%; 
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto, puedes cambiarlo */
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Novedades y cómo jugar */
+#Novedadesycomojugar {
+    padding: 20px;
+    background: #222;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: fuchsia;
+}
+
+/* Noticias y FAQ */
+aside {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.Noticia1, .Noticia2, .Noticia3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Noticia1 img, .Noticia2 img, .Noticia3 img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* FAQ */
+details {
+    margin: 10px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: fuchsia;
+    align-items: center;
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #superior {
+        flex-direction: column;
+        align-items: center;
+    }
+}
