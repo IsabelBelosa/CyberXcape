@@ -122,24 +122,75 @@ h2, h3 {
 
 /* Noticias */
 aside {
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 0;
+    width: 100%;
     padding: 20px;
     background: #333;
     border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
+details {
+    width: 100%;
+}
+
+/* Contenedor de noticias en fila */
+details > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px; /* Espacio entre columnas */
+    width: 100%;
+    flex-wrap: wrap; /* Permite que se adapten en pantallas pequeñas */
+}
+
+/* Estilo de cada noticia */
 .Noticia1, .Noticia2, .Noticia3 {
+    flex: 1; /* Hace que todas ocupen el mismo espacio */
+    max-width: calc(33.33% - 20px); /* Para que sean 3 columnas */
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
 }
 
-.Noticia1 img, .Noticia2 img, .Noticia3 img {
-    max-width: 100%;
+/* Imágenes dentro de cada noticia */
+details div img {
+    width: 100%;
+    max-width: 300px; /* Controla el tamaño máximo */
+    height: auto;
+    object-fit: cover;
     border-radius: 5px;
 }
+
+/* Texto debajo de la imagen */
+details div p {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 10px;
+    max-width: 90%;
+}
+
+/* Ajuste responsivo para pantallas pequeñas */
+@media (max-width: 900px) {
+    .Noticia1, .Noticia2, .Noticia3 {
+        max-width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 600px) {
+    .Noticia1, .Noticia2, .Noticia3 {
+        max-width: 100%; /* Una columna en pantallas pequeñas */
+    }
+}
+
+
 
 /* FAQ */
 
