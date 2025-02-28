@@ -117,7 +117,11 @@ nav ul li a {
 
 
 h2, h3 {
-    color: fuchsia;
+    color: #7ADEF5;
+    font-size: 2em;
+    border: 2px solid #EB2CDE;
+    background-color: #000000;
+    padding: 10px;
 }
 
 /* Noticias */
@@ -136,6 +140,24 @@ details {
 }
 
 /* Contenedor de noticias en fila */
+
+.noticias summary {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Elimina la flecha predeterminada */
+    cursor: pointer;
+}
+
+.noticias summary::before {
+    content: "▶"; /* Agrega una flecha personalizada */
+    margin-right: 10px; /* Espacio entre la flecha y el texto */
+    transition: transform 0.3s ease; /* Efecto de rotación */
+}
+
+details[open] summary::before {
+    transform: rotate(90deg); /* Rota la flecha cuando se abre */
+}
+
 details > div {
     display: flex;
     justify-content: center;
@@ -144,9 +166,12 @@ details > div {
     width: 100%;
     flex-wrap: wrap; /* Permite que se adapten en pantallas pequeñas */
 }
-
+#vernoticias {
+    flex-direction: row;
+    align-items: stretch;
+}
 /* Estilo de cada noticia */
-.Noticia1, .Noticia2, .Noticia3 {
+.noticia1, .noticia2, .noticia3 {
     flex: 1; /* Hace que todas ocupen el mismo espacio */
     max-width: calc(33.33% - 20px); /* Para que sean 3 columnas */
     background: #222;
@@ -195,9 +220,9 @@ details div p {
 /* FAQ */
 
 #faq {
-    padding: 20px;
+
     position: relative;
-    overflow: hidden; /* Previne que la imagen o el contenido se desborde */
+ 
 }
 
 #faq #candado {
@@ -210,14 +235,6 @@ details div p {
     z-index: -1; /* La imagen estará detrás del contenido */
 }
 
-#faq #preguntas span {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1; /* Asegura que las preguntas estén encima de la imagen */
-    position: relative;
-}
 
 #faq #preguntas {
     display: flex;
@@ -226,6 +243,7 @@ details div p {
     justify-content: center;
     z-index: 1; /* Asegura que las preguntas estén encima de la imagen */
     position: relative;
+    align-items: stretch;
 }
 
 #preguntas details {
