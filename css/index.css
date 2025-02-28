@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: #EB2CDE;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.introduccion {
+    margin-top: 20px; /* Espacio debajo del header */
+}
+
+#cronometro {
+    font-size: 48px;
+    font-weight: bold;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid #EB2CDE;
+}
