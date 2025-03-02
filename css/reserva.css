@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .salareserva a {
-    background-color: #ff00ff;
+    background-color: #eb2cde;
     color: white;
     padding: 20px;
     text-decoration: none;
@@ -101,7 +101,7 @@ form input, form select {
 }
 
 input[type="submit"] {
-    background-color: #ff00ff;
+    background-color: #eb2cde;
     color: white;
     font-weight: bold;
     border: none;
