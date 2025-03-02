@@ -93,6 +93,8 @@ form label {
     font-weight: bold;
 }
 
+
+
 form input, form select {
     padding: 10px;
     border-radius: 5px;
@@ -110,3 +112,9 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+@media(max-width: 955px) {
+    #reserva-form {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
