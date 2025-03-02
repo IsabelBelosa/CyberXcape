@@ -8,7 +8,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
 /* Diseño de las salas */
 main {
     display: flex;
@@ -19,41 +18,61 @@ main {
 }
 
 .salasIzquierda, .salasDerecha {
+    font-family: 'Jockey One', sans-serif;
     display: flex;
     align-items: center;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
     width: 80%;
     box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.titulo-foto{
+    text-align: center;
 }
 
 .salasIzquierda img, .salasDerecha img {
     width: 300px;
     height: auto;
     border-radius: 10px;
-    border: 3px solid #eb2cde;
+    border: 2px solid #eb2cde;
 }
 
 .salasIzquierda h1, .salasDerecha h1 {
-    color: #eb2cde;
-    font-size: 28px;
-    text-shadow: 2px 2px 5px black;
+    color: #7ADEF5;
+    font-size: 2em;
+    border: 2px solid #EB2CDE;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
-.masInfo summary {
-    cursor: pointer;
-    color: #eb2cde;
-    font-weight: bold;
-    margin-top: 10px;
+.salasIzquierda span, .salasDerecha span {
+    font-size: 1.5em;
+    margin: 20px;
 }
+
+.salasIzquierda p, .salasDerecha p {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
 
 /* Tablas */
+
+.tabla{
+    margin: 20px;
+}
+
+
 .tabla table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    font-size: 1.5em;
 }
 
 .tabla th, .tabla td {
@@ -74,8 +93,52 @@ main {
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
 }
 
-.masInfo summary:hover {
-    background-color: #eb2cde;
+/* Responsividad */
+@media (max-width: 955px) {
+    .salasIzquierda, .salasDerecha {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .titulo-foto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .salasDerecha{
+        flex-direction: column-reverse
+    }
+
+    .salasIzquierda img, .salasDerecha img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+
+    .salasIzquierda h1, .salasDerecha h1 {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .salasIzquierda span, .salasDerecha span,
+    .salasIzquierda p, .salasDerecha p {
+        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    .tabla table {
+        font-size: 1em;
+    }
+
+    .masInfo summary {
+        font-size: 1em;
+        margin-left: 0;
+    }
 }

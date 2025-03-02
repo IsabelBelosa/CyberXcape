@@ -1,51 +1,50 @@
 /* Estilos generales */
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
+
 /*Estilos header*/
 header {
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 10;
+    background-color: #000000;
 }
 
 header #superior {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000; 
-    padding-right: 40px;
-    padding-left: 40px;
-    border: none; /* Elimina los bordes blancos */
+    padding: 10px 20px;
 }
+
 header #superior #logo {
-    margin-left: 0;
-    padding-left: 0;
     display: flex;
     align-items: center;
 }
 
 header #superior #titulo {
-    font-size: 2em; /* Ajusta el tamaño del título con em ya que se adapta a las modicaciones de nuestra fuente de google*/
+    font-size: 2em;
     color: #ffffff;
 }
 
 header #superior #titulo #X {
     font-size: 3em;
-    color: #EB2CDE; /* Color rosa para la "X" */
+    color: #EB2CDE;
 }
 
 header #superior #apariencia {
-    max-height: 40px; /* Ajusta el tamaño de la imagen de apariencia */
+    max-height: 40px;
 }
 
 header #inferior {
-    background-color: #B1B1B1; /*#D3D3D3*/
+    background-color: #B1B1B1;
 }
 
 header #inferior nav ul {
@@ -73,40 +72,34 @@ header #inferior nav ul li a.active {
     border-bottom: 2px solid #000000;
 }
 
-
 /*Estilos footer*/
-
 footer {
     background-color: #000000;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    position: s;
+    position: static;
     bottom: 0;
 }
 
-footer #logo-copy img{
+footer #logo-copy img {
     max-height: 70px;
 }
 
-footer #logo-copy{
+footer #logo-copy {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     align-items: center;
 }
 
 footer #titulo1 {
-    font-size: 1em; /* Ajusta el tamaño del título */
+    font-size: 1em;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    padding-left: 100px;
-    margin-top: 20px;
+    text-align: center;
+    flex: 1;
 }
 
 footer #titulo1 #X1 {
@@ -118,7 +111,6 @@ footer #contact-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 40px;
 }
 
 footer #contact-info span {
@@ -137,25 +129,30 @@ footer #contact-info span a {
     text-decoration: none;
 }
 
-
 /* Responsividad */
-@media (max-width: 955px) {
-
-    body{
-        width: max-content;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    #superior {
+@media (max-width: 768px) {
+    header #superior {
         flex-direction: column;
         text-align: center;
     }
-    #inferior {
+
+    header #inferior nav ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer #titulo1 {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    footer #logo-copy img {
+        padding-left: 0;
     }
 }
