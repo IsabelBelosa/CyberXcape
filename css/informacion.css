@@ -7,39 +7,79 @@ body {
     padding: 0;
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+main {
+    width: 100%;
+    max-width: 1400px; /* Máximo ancho sin que se desborde */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 /* Estilo para títulos */
-h1, p {
-    font-family: 'Jockey One', sans-serif;
+h1 {
+    color: #7ADEF5;
     font-size: 2em;
+    border: 2px solid #EB2CDE;
+    background-color: #000000;
+    padding: 10px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
 }
 
-/* Secciones generales en dos columnas */
-.bloque1, .bloque2, .bloque3 {
+/* ===================== */
+/* BLOQUE 1: HISTORIA Y EQUIPO */
+/* ===================== */
+
+.bloque1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly; /* Distribución equilibrada */
+    align-items: flex-start;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Asegurar que los dos elementos se mantengan alineados */
+#nuestrahistoria, #nuestroequipo {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%; /* No se recorta en pantallas grandes */
+    text-align: center;
+}
+
+/* Asegurar que el contenido no se desborde */
+#nuestrahistoria p,
+#nuestroequipo iframe {
+    width: 100%;
+    text-align: justify;
+}
+
+#nuestroequipo iframe {
+    height: 360px;
+    max-width: 100%;
+}
+
+/* ===================== */
+/* BLOQUE 2: PREMIOS */
+/* ===================== */
+
+.bloque2 {
+    background-color: #B1B1B1;
+    color: black;
     text-align: center;
     padding: 50px;
     width: 100%;
 }
 
-.bloque1 div, .bloque2 div, .bloque3 div {
-    flex: 1;
-    min-width: 300px; /* Evita que los elementos sean demasiado pequeños en pantallas chicas */
-    max-width: 50%;
-    flex-direction: row
-}
-
-/* Sección con fondo blanco */
-.bloque2 {
-    background-color: #B1B1B1;
-    color: black;
-}
-
-/* Ajuste de premios */
 .premios {
     display: flex;
     align-items: center;
@@ -58,81 +98,80 @@ h1, p {
     font-weight: bold;
 }
 
-/* Sección con información */
+/* ===================== */
+/* BLOQUE 3: CONTACTO Y LOCALIZACIÓN */
+/* ===================== */
+
+.bloque3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Asegura que se adapte */
+    align-items: flex-start;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Contacto y localización en columnas paralelas */
+.contacto, .localizacion {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    text-align: center;
+}
+
+/* Ajustes en la lista de contacto */
 .info-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaciado entre el logo y el texto */
+    gap: 15px;
     margin-bottom: 15px;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
     text-align: left;
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Ajuste de imágenes dentro de info-item */
 .info-item img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
-    margin: 0; 
-    flex-shrink: 0; /* Evita que la imagen se reduzca en tamaños pequeños */
+    flex-shrink: 0;
 }
 
 .info-item p {
-    flex-grow: 1; /* Hace que el texto ocupe el espacio disponible */
+    flex-grow: 1;
     font-size: 1.2em;
 }
 
-/* Ajuste de iframes */
-.nuestroequipo iframe, 
-.contacto iframe{
-    width: 100%;
-    height: 360px;
-    max-width: 100%;
-}
-
-.localizacion {
-    display: flex;
-    justify-content: center; /* Centra el iframe horizontalmente */
-    align-items: center; /* Centra verticalmente si es necesario */
-    width: 100%;
-    border: 4px solid #B1B1B1;
-}
-
+/* Mapa en localización */
 .localizacion iframe {
-    width: 80%; /* Controla el ancho del iframe */
-    height: 450px; /* Ajusta la altura del iframe */
-    max-width: 600px; /* Evita que se haga demasiado grande en pantallas grandes */
-    border: 4px solid #B1B1B1; /* Borde del iframe */
-    box-sizing: border-box; /* Asegura que el borde no afecte el tamaño */
+    width: 100%;
+    height: 450px;
+    max-width: 500px;
+    border: 4px solid #B1B1B1;
+    box-sizing: border-box;
+    display: block;
 }
 
-/* Diseño responsivo para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    .bloque1, .bloque2, .bloque3 {
+/* ===================== */
+/* RESPONSIVE DESIGN */
+/* ===================== */
+
+@media screen and (max-width: 900px) {
+    .bloque1, .bloque3 {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        text-align: center;
         padding: 20px;
     }
 
-    .bloque1 div, .bloque2 div, .bloque3 div {
-        max-width: 100%;
-        min-width: 100%;
-    }
-
-    .nuestrahistoria, 
-    .contacto, 
-    .localizacion, 
-    .nuestroequipo iframe, 
-    .contacto iframe, 
-    .localizacion iframe {
-        width: 100%;
+    #nuestrahistoria, #nuestroequipo,
+    .contacto, .localizacion {
         max-width: 100%;
     }
 
-    /* Ajuste responsivo para info-item */
     .info-item {
         flex-wrap: wrap;
         justify-content: center;
