@@ -26,6 +26,9 @@ h1 {
     padding: 10px;
     font-family: 'Jockey One', sans-serif;
     text-align: center;
+    display: inline-block;  /* Ajusta el ancho al tamaño del texto */
+    width: auto;            /* El ancho será solo el necesario para el texto */
+    margin: 10px 0;
 }
 
 /* ===================== */
@@ -34,32 +37,36 @@ h1 {
 
 .bloque1 {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distribución equilibrada */
+    text-align: center;
+    padding: 50px;
+    gap: 40px;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Asegurar que los dos elementos se mantengan alineados */
-
-#nuetrahistoria{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#nuestrahistoria, #nuestroequipo {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%; /* No se recorta en pantallas grandes */
     text-align: center;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
 }
-
-#nuestroequipo{
-    border-radius: 10px;
-    height: fit-content;
-}
-
-
-
 
 /* Asegurar que el contenido no se desborde */
-#nuestrahistoria p,
+#nuestrahistoria p, #nuestrahistoria .masinfo p,
 #nuestroequipo iframe {
     width: auto;
     text-align: justify;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2em;
+
 }
 
 #nuestroequipo iframe {
@@ -114,12 +121,17 @@ h1 {
 
 .bloque3 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly; /* Asegura que se adapte */
     align-items: center;
     text-align: center;
     padding: 50px;
     width: 80%;
-
+    gap: 40px;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Contacto y localización en columnas paralelas */
@@ -128,6 +140,8 @@ h1 {
     min-width: 300px;
     max-width: 45%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Ajustes en la lista de contacto */
@@ -150,7 +164,8 @@ h1 {
 }
 
 .info-item p {
-    font-family: 'Inter', sans-serif;
+  
+    font-family: 'Jockey One', sans-serif;
     flex-grow: 1;
     font-size: 1.5em;
     color: #ffffff;
@@ -174,17 +189,17 @@ h1 {
 /* RESPONSIVE DESIGN */
 /* ===================== */
 
-@media (max-width: 955px) {
-    .bloque1, .bloque2, .bloque3 {
+@media screen and (max-width: 955px) {
+    .bloque1, .bloque3 {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
-        width: 95%;
     }
 
-    .bloque1 div, .bloque2 div, .bloque3 div {
-        width: 100%;
+    #nuestrahistoria, #nuestroequipo,
+    .contacto, .localizacion {
+        max-width: 100%;
     }
 
     .info-item {
@@ -193,14 +208,7 @@ h1 {
         text-align: center;
     }
 
-    .info-item img {
-        margin-bottom: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .localizacion iframe {
-        width: 100%;
-        max-width: 100%;
+    .bloque1, .bloque2, .bloque3 {
+        width: 95%;
     }
 }
