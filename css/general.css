@@ -130,20 +130,24 @@ footer #contact-info span a {
 }
 
 /* Responsividad */
-@media (max-width: 768px) {
-    header #superior {
+@media (max-width: 955px) {
+
+    nav ul {
         flex-direction: column;
+        gap: 10px;
         text-align: center;
     }
-
-    header #inferior nav ul {
-        flex-direction: row;
+    #superior {
+        flex-direction: column;
         align-items: center;
-        text-align: center;
+    }
+    #inferior {
+        flex-direction: column;
+        align-items: center;
     }
 
     footer {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }

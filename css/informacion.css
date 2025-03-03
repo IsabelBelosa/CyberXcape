@@ -34,21 +34,26 @@ h1 {
 
 .bloque1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; /* Distribución equilibrada */
-    text-align: center;
-    padding: 50px;
-    gap: 40px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Asegurar que los dos elementos se mantengan alineados */
-#nuestrahistoria, #nuestroequipo {
-    flex: 1;
-    min-width: 300px;
-    max-width: 45%; /* No se recorta en pantallas grandes */
+
+#nuetrahistoria{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    width: min-content;
 }
+
+#nuestroequipo{
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+
 
 /* Asegurar que el contenido no se desborde */
 #nuestrahistoria p,
@@ -169,17 +174,17 @@ h1 {
 /* RESPONSIVE DESIGN */
 /* ===================== */
 
-@media screen and (max-width: 955px) {
-    .bloque1, .bloque3 {
+@media (max-width: 955px) {
+    .bloque1, .bloque2, .bloque3 {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
+        width: 95%;
     }
 
-    #nuestrahistoria, #nuestroequipo,
-    .contacto, .localizacion {
-        max-width: 100%;
+    .bloque1 div, .bloque2 div, .bloque3 div {
+        width: 100%;
     }
 
     .info-item {
@@ -188,7 +193,14 @@ h1 {
         text-align: center;
     }
 
-    .bloque1, .bloque2, .bloque3 {
-        width: 95%;
+    .info-item img {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .localizacion iframe {
+        width: 100%;
+        max-width: 100%;
     }
 }

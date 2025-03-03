@@ -113,7 +113,11 @@ input[type="submit"] {
 
 
 /* Responsividad */
-@media(max-width: 955px) {
+@media(max-width: 955px) { 
+    .salareserva img {
+        width: 100%;
+        max-width: 300px;
+    }
     #reserva-form {
         flex-direction: column;
         margin-bottom: 20px;
