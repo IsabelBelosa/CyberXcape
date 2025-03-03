@@ -36,7 +36,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; /* Distribución equilibrada */
-    align-items: flex-start;
     text-align: center;
     padding: 50px;
     gap: 40px;
@@ -48,6 +47,7 @@ h1 {
     min-width: 300px;
     max-width: 45%; /* No se recorta en pantallas grandes */
     text-align: center;
+    width: min-content;
 }
 
 /* Asegurar que el contenido no se desborde */
@@ -60,6 +60,19 @@ h1 {
 #nuestroequipo iframe {
     height: 360px;
     max-width: 100%;
+}
+
+.masinfo summary {
+    background-color: #eb2cde;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Jockey One', sans-serif;
 }
 
 /* ===================== */
