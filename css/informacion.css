@@ -1,8 +1,8 @@
-/* Estilos generales */
+/* General Styles */
 body {
-    background-color: black;
     font-family: 'Inter', sans-serif;
-    color: white;
+    background-color: #222;
+    color: #fff;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
@@ -177,8 +177,7 @@ h1 {
         text-align: center;
     }
 
-    .info-item img {
-        margin-bottom: 10px;
-        margin-left: auto;
+    .bloque1, .bloque2, .bloque3 {
+        width: 95%;
     }
 }
