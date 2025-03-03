@@ -95,6 +95,7 @@ nav ul li a {
     width: 100%; 
     text-align: right;
     margin-left: auto; 
+    flex-grow: 1;
 }
 
 #novedadesycomojugar #comojugar {
@@ -112,6 +113,7 @@ nav ul li a {
     justify-content: space-between; 
     width: 100%; 
     text-align: right;
+    flex-grow: 1;
 }
 
 
