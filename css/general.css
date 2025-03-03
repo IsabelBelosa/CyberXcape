@@ -137,12 +137,13 @@ footer #contact-info span a {
     }
 
     header #inferior nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        text-align: center;
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }

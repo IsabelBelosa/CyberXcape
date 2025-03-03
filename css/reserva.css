@@ -93,25 +93,27 @@ form label {
     font-weight: bold;
 }
 
-
-
 form input, form select {
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin-top: 5px;
+    border: 2px solid #eb2cde;
 }
 
 input[type="submit"] {
     background-color: #eb2cde;
     color: white;
-    font-weight: bold;
     border: none;
+    font-size: 2em;
     padding: 10px;
     margin-top: 15px;
     cursor: pointer;
+    font-family: 'Jockey One', sans-serif;
 }
 
+
+/* Responsividad */
 @media(max-width: 955px) {
     #reserva-form {
         flex-direction: column;
