@@ -161,30 +161,7 @@ ul > li img {
 
 /* Contenedor de noticias en fila */
 
-.noticias summary {
-    display: flex;
-    align-items: center;
-    list-style: none; /* Elimina la flecha predeterminada */
-    cursor: pointer;
-}
 
-.noticias summary::before {
-    content: "▶"; /* Agrega una flecha personalizada */
-    margin-right: 10px; /* Espacio entre la flecha y el texto */
-    transition: transform 0.3s ease; /* Efecto de rotación */
-}
-
-details[open] summary::before {
-    transform: rotate(90deg); /* Rota la flecha cuando se abre */
-}
-
-details > div {
-    display: flex;
-    justify-content: space-between; /* Distribuye las noticias de forma equidistante en una fila */
-    gap: 20px; /* Espacio entre las noticias */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-}
 #vernoticias {
     flex-direction: row;
     align-items: stretch;
@@ -202,23 +179,7 @@ details > div {
     align-items: center;
 }
 
-/* Estilo de las imágenes dentro de cada noticia */
-details div img {
-    width: 100%; /* Las imágenes toman el 100% del ancho del contenedor */
-    max-width: 100%; /* Para evitar que se estiren demasiado */
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
 
-/* Texto debajo de la imagen */
-details div p {
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 10px;
-    max-width: 90%;
-}
 
 /* FAQ */
 
