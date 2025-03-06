@@ -12,6 +12,7 @@
     <!--fuentes de letras-->
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- Enlaces a los archivos CSS -->
     <link href="css/general.css" rel="stylesheet" type="text/css">
@@ -39,45 +40,48 @@
             </nav>
         </div>
     </header>
-    <main>
+    <div>
         <!-- Introducción: Presentación visual y título atractivo -->
         <div id="introduccion">
             <img src="./images/cronometro2.gif" alt="Cronometro rosa" id="cronometro"> <!-- Imagen de un cronómetro rosa -->
             <div id="texto">¿Podrás vencer a la IA antes de que sea demasiado tarde?</div> 
         </div>
-        <div id="novedadesycomojugar"> <!-- Sección de novedades y cómo jugar -->
-            <div id="novedades">
-                <h2>NOVEDADES</h2> 
+        <div id="bloquemedio"></div>
+            <div id="novedadesycomojugar"> <!-- Sección de novedades y cómo jugar -->
+                <div id="novedades">
+                    <h2>NOVEDADES</h2> 
+                </div>
+                <div id="novedades2">
+                    <p>¡EVENTO TEMÁTICO!</p>
+                    <p>ORGANIZAMOS NUEVAS PARTIDAS ESPECIALES CON DESAFÍOS Y VERSIONES ALTERNATIVAS DEL JUEGO</p>
+                </div>
+                <div id="comojugar">
+                    <p>FORMA UN EQUIPO, SIGUE LAS PISTAS, RESUELVE ACERTIJOS Y ESCAPA ANTES DE QUE SE ACABE EL TIEMPO Y LA IA TE ATRAPE</p> 
+                </div>
+                <div id="comojugar2">
+                    <h2>¿CÓMO JUGAR?</h2> <!-- Título de cómo jugar -->
+                </div>
             </div>
-            <div id="novedades2">
-                <p>¡EVENTO TEMÁTICO!</p>
-                <p>ORGANIZAMOS NUEVAS PARTIDAS ESPECIALES CON DESAFÍOS Y VERSIONES ALTERNATIVAS DEL JUEGO</p>
-            </div>
-            <div id="comojugar">
-                <p>FORMA UN EQUIPO, SIGUE LAS PISTAS, RESUELVE ACERTIJOS Y ESCAPA ANTES DE QUE SE ACABE EL TIEMPO Y LA IA TE ATRAPE</p> 
-            </div>
-            <div id="comojugar2">
-                <h2>¿CÓMO JUGAR?</h2> <!-- Título de cómo jugar -->
+            <div id="barralateral">
+                <aside class="noticias"> <!-- Sección de noticias complementaria (uso de aside)-->
+                    <h3 id="vernoticia"> NOTICIAS</h3> <!-- Summary Cada noticia está dentro de un <div> con imágenes y descripciones, siendo esta un summary (desplegable interactivo) -->
+                        <ul> 
+                            <li>
+                                <img src="./images/escaperoom1.jpg" alt="sala1" id="sala1">
+                                <p>¿Lograron escapar o quedaron atrapados en la red de acertijos de la IA? ¡NUEVA SALA DISPONIBLE!</p>
+                            </li>
+                            <li>
+                                <img src="./images/cerebrito.png" alt="logo de cerebro" id="cerebrito">
+                                <p>¿ACEPTAS EL DESAFÍO?</p>
+                            </li>
+                            <li>
+                                <img src="./images/escaperoom2.jpg" alt="sala2" id="sala2">
+                                <p>¡DESCUBRE NUESTRA SALA DE ESCAPE MÁS DESAFIANTE Y VIVE UNA EXPERIENCIA INOLVIDABLE!</p>
+                            </li>
+                        </ul>
+                </aside>
             </div>
         </div>
-        <aside class="noticias"> <!-- Sección de noticias complementaria (uso de aside)-->
-            <details>
-                <summary><h3 id="vernoticia"> NOTICIAS</h3></summary>  <!-- Cada noticia está dentro de un <div> con imágenes y descripciones, siendo esta un summary (desplegable interactivo) -->
-                <div class="noticia1">
-                    <img src="./images/escaperoom1.jpg" alt="sala1" id="sala1">
-                    <p>¿Lograron escapar o quedaron atrapados en la red de acertijos de la IA? ¡NUEVA SALA DISPONIBLE!</p>
-                </div>
-                <div class="noticia2">
-                    <img src="./images/cerebrito.png" alt="logo de cerebro" id="cerebrito">
-                    <p>¿ACEPTAS EL DESAFÍO?</p>
-                </div>
-                <div class="noticia3">
-                    <img src="./images/escaperoom2.jpg" alt="sala2" id="sala2">
-                    <p>¡DESCUBRE NUESTRA SALA DE ESCAPE MÁS DESAFIANTE Y VIVE UNA EXPERIENCIA INOLVIDABLE!</p>
-                </div>
-            </details>
-        </aside>
-
         <div id="faq"> <!-- Sección de preguntas frecuentes -->
             <div id="preguntas">
                 <h3>FAQ</h3> <!-- Cada pregunta frecuente está dentro de un <div> con respuestas, siendo esta un summary (desplegable interactivo) -->

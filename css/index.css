@@ -126,19 +126,38 @@ h2, h3 {
 }
 
 /* Noticias */
-aside {
+
+#barralateral{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+aside .noticias {
     margin: 0;
-    width: 100%;
-    padding: 20px;
+    width: 800px;
+    padding: 1rem;
     background: black;
     border-radius: 10px;
     text-align: center;
-    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 800px;
+    scrollbar-color: #EB2CDE;
+    scrollbar-width: thin;
+    box-shadow:4px #7ADEF5;
 }
 
-details {
-    width: 100%;
+
+/* Estilo de las imágenes dentro de cada noticia */
+ul > li img {
+    width: 75%; /* Las imágenes toman el 100% del ancho del contenedor */
+    max-width: 100%; /* Para evitar que se estiren demasiado */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    list-style-type: none;
 }
+
 
 /* Contenedor de noticias en fila */
 
@@ -200,20 +219,6 @@ details div p {
     margin-top: 10px;
     max-width: 90%;
 }
-
-/* Ajuste responsivo para pantallas pequeñas 
-@media (max-width: 900px) {
-    .Noticia1, .Noticia2, .Noticia3 {
-        max-width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
-    /*}*/
-/*}*/
-
-/*@media (max-width: 600px) {
-    .Noticia1, .Noticia2, .Noticia3 {
-        max-width: 100%; /* Una columna en pantallas pequeñas */
-    /*}*/
-/*}*/
-
 
 /* FAQ */
 
