@@ -71,6 +71,18 @@ nav ul li a {
 }
 
 /* Novedades y cómo jugar */
+
+#bloquemedio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+
 #novedadesycomojugar { 
     padding: 20px;
     width: 100%;
@@ -127,56 +139,41 @@ h2, h3 {
 
 /* Noticias */
 
-#barralateral{
-    display: flex;
-    justify-content: flex-end;
+#scroll-noticias {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 500px; /* Ajusta este valor según necesites */
+    height: 500px; /* Ajusta la altura según lo que desees */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    border: 2px solid #ccc; /* Opcional: bordes para darle estilo */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo con transparencia opcional */
+    border-radius: 10px; 
 }
 
-
-aside .noticias {
-    margin: 0;
-    width: 800px;
-    padding: 1rem;
-    background: black;
-    border-radius: 10px;
-    text-align: center;
-    overflow-y: scroll;
-    height: 800px;
-    scrollbar-color: #EB2CDE;
-    scrollbar-width: thin;
-    box-shadow:4px #7ADEF5;
+#scroll-noticias::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
 }
+
+#scroll-noticias::-webkit-scrollbar-thumb {
+    background-color: #EB2CDE; /* Color del scrollbar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#scroll-noticias::-webkit-scrollbar-track {
+    background: #333; /* Color del fondo del scrollbar */
+}
+
 
 
 /* Estilo de las imágenes dentro de cada noticia */
-ul > li img {
+ul li img {
     width: 75%; /* Las imágenes toman el 100% del ancho del contenedor */
     max-width: 100%; /* Para evitar que se estiren demasiado */
     height: auto;
     object-fit: cover;
     border-radius: 5px;
     list-style-type: none;
-}
-
-
-/* Contenedor de noticias en fila */
-
-
-#vernoticias {
-    flex-direction: row;
-    align-items: stretch;
-}
-/* Estilo de cada noticia */
-.Noticia1, .Noticia2, .Noticia3 {
-    width: 32%; /* Hace que cada noticia ocupe un 32% del ancho del contenedor */
-    background: black; /* Fondo para todas las noticias */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
