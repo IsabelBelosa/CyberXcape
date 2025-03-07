@@ -17,7 +17,9 @@
     <!-- Enlaces a los archivos CSS -->
     <link href="css/general.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
-    
+    <!-- Enlace a la hoja de scripts -->
+    <script src="js/hamburguesa.js"></script>
+    <!--Titulo que se muestra en la pestaña del buscador-->
     <title>CyberXcape-Inicio</title>
 </head>
 <body> <!-- Contiene header(cabecera de la página superior e inferior(indice)), main y footer(cabecera inferior) -->
@@ -29,9 +31,13 @@
             <span id="titulo">CYBER<span id="X">X</span>CAPE</span>
             <img src="./images/apariencia.jpg" alt="Apariencia" id="apariencia">
         </div>
+        <!-- Icono de menú hamburguesa -->
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
         <div id="inferior">
             <nav>
-                <ul>
+                <ul id="nav-list">
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="salas.html">SALAS</a></li>
                     <li><a href="reserva.html">RESERVAS</a></li>

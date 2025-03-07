@@ -99,6 +99,20 @@ header #inferior nav ul li a.active {
 }
 
 
+/* Estilos para el icono del menú hamburguesa */
+.menu-icon {
+    display: none; /* Oculto por defecto */
+    font-size: 2em;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 20;
+}
+
+
 /*Estilos footer*/
 footer {
     background-color: #000000;
@@ -169,9 +183,34 @@ footer #contact-info span a {
         flex-direction: column;
         align-items: center;
     }
-    #inferior {
+
+    /* Aparece el icono del menú hamburguesa*/
+
+    .menu-icon {
+        display: block; /* Aparece en pantallas pequeñas */
+    }
+
+    #nav-list {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #B1B1B1;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    #nav-list.open {
+        max-height: 300px; /* Ajusta según el contenido */
+    }
+
+    #nav-list li {
+        padding: 15px 0;
     }
 
     footer {
