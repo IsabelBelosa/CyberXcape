@@ -74,30 +74,6 @@ header #inferior nav ul li a.active {
     border-bottom: 2px solid #000000;
 }
 
-/*Estilos barra lateral*/
-/* Estilo general de la barra */
-::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra vertical */
-    height: 10px; /* Altura de la barra horizontal (si existe) */
-}
-
-/* Color de fondo de la barra */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo */
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-/* Color y diseño del "pulgar" (la parte que se mueve) */
-::-webkit-scrollbar-thumb {
-    background: #EB2CDE; /* Color del pulgar */
-    border-radius: 5px;
-}
-
-/* Cambia el color al pasar el mouse */
-::-webkit-scrollbar-thumb:hover {
-    background: #7ADEF5;
-}
-
 
 /* Estilos para el icono del menú hamburguesa */
 .menu-icon {
@@ -112,6 +88,7 @@ header #inferior nav ul li a.active {
     z-index: 20;
 }
 
+/*-----------------------------------*/ 
 
 /*Estilos footer*/
 footer {
@@ -170,6 +147,36 @@ footer #contact-info span a {
     color: #ffffff;
     text-decoration: none;
 }
+
+
+/*-----------------------------------*/
+
+/*Estilos barra lateral*/
+
+/* Estilo general de la barra */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra vertical */
+    height: 10px; /* Altura de la barra horizontal (si existe) */
+}
+
+/* Color de fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Color y diseño del "pulgar" (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    background: #EB2CDE; /* Color del pulgar */
+    border-radius: 5px;
+}
+
+/* Cambia el color al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #7ADEF5;
+}
+
+/*-----------------------------------*/
 
 /* Responsividad */
 @media (max-width: 955px) {
