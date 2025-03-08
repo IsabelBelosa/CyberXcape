@@ -19,6 +19,8 @@
     <link href="css/reserva.css" rel="stylesheet" type="text/css">
     <!-- Enlace a la hoja de scripts -->
     <script src="js/hamburguesa.js"></script>
+    <script src="js/validacion-formulario.js"></script>
+    <script src="js/cambiar-info.js"></script>
     <!--Titulo que se muestra en la pestaña del buscador-->
     <title>CyberXcape-Reserva</title>
 </head>
@@ -60,24 +62,24 @@
             <div class="salareserva">
                 <div>
                     <!--Titulo y descripcion de la sala-->
-                    <h1>Neutral Hack</h1>
-                    <img src="./images/NeutralHack.png" alt="Sala 1 Neutral Hack" id="neutralhack">
+                    <h1 id="TituloSala">Neutral Hack</h1>
+                    <img src="./images/NeutralHack.png" alt="Sala 1 Neutral Hack" id="FotoSala">
                 </div>
                 <!-- Enlace a la página de salas para ver más información-->
                 <a href="salas.html">+ VER MÁS INFO</a>
                 <div id="detalles">
                     <!-- Detalles sobre la sala: aforo, duración y edad mínima -->
-                    <h2>Aforo máximo: 8 personas</h2>
-                    <h2>Duración: 60 minutos</h2>
-                    <h2>Edad mínima: 10 años</h2>
+                    <h2 id="AforoSala">Aforo máximo: 8 personas</h2>
+                    <h2 id="DuracionSala">Duración: 60 minutos</h2>
+                    <h2 id="EdadSala">Edad mínima: 10 años</h2>
                 </div>
             </div>
             <!--Formulario para realizar la reserva-->
             <div class="formulario">
-                <form>
+                <form id="form_book" action="#" method="post">
                     <!--Opción para introducir numero de jugadores-->
                     <label for="inputjugadores">Número de jugadores:</label>
-                    <input type="number" placeholder="Introduce num. jugadores" id="inputjugadores" name="inputjugadores">
+                    <input type="number" placeholder="Introduce num. jugadores" id="inputjugadores" name="inputjugadores" required>
                     <!--Opción para seleccionar sala-->
                     <label for="inputsalas">Selecciona una sala:</label>
                     <select name="inputsalas" id="inputsalas">
@@ -96,17 +98,17 @@
                     <!-- Campos de texto para introducir nombre, apellidos y correo -->
 
                     <label for="inputnombre">Introduce tu nombre:</label>
-                    <input type="text" placeholder="Introduce tu nombre" id="inputnombre" name="inputnombre">
+                    <input type="text" placeholder="Introduce tu nombre" id="inputnombre" name="inputnombre" required>
                     
                     <label for="inputapellidos">Introduce tus apellidos:</label>
-                    <input type="text" placeholder="Introduce tus apellidos" id="inputapellidos" name="inputapellidos">
+                    <input type="text" placeholder="Introduce tus apellidos" id="inputapellidos" name="inputapellidos" required>
 
                     <label for="inputcorreo">Introduce tu correo:</label>
-                    <input type="text" placeholder="Introduce tu correo" id="inputcorreo" name="inputcorreo">
+                    <input type="text" placeholder="Introduce tu correo" id="inputcorreo" name="inputcorreo" required>
 
                     <!-- Opción para seleccionar fecha y hora -->
                     <label for="inputfecha">Selecciona fecha:</label>
-                    <input type="date" id="inputfecha" name="inputfecha">
+                    <input type="date" id="inputfecha" name="inputfecha" required>
 
                     <span>Selecciona hora:</span>
                     <div id="horas">
@@ -120,7 +122,7 @@
                         <label for="inputhora4">19:00h</label>
                     </div>
                     <!-- Botón para enviar el formulario -->
-                    <input type="submit" value="RESERVAR">
+                    <input type="submit" id="botonReserva" value="RESERVAR">
                     <span>(El pago se realizará de forma presencial en el local)</span>
                 </form>
             </div>

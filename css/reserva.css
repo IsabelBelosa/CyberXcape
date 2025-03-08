@@ -111,6 +111,11 @@ input[type="submit"] {
     font-family: 'Jockey One', sans-serif;
 }
 
+/* Estilos para los mensajes de error */
+.error{
+    background: #ffaef9;
+}
+
 
 /* Responsividad */
 @media(max-width: 955px) { 
