@@ -170,6 +170,9 @@ ul li img {
     list-style-type: none;
 }
 
+.ListaDotless{
+    list-style: none;
+}
 
 
 /* FAQ */
@@ -218,9 +221,3 @@ ul li img {
     color: #7ADEF5;
     align-items: center;
 }
-
-.ListaDotless{
-    list-style: none;
-}
-
-
