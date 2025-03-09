@@ -219,6 +219,8 @@ ul li img {
     align-items: center;
 }
 
-
+.ListaDotless{
+    list-style: none;
+}
 
 
