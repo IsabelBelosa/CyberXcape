@@ -67,59 +67,54 @@ nav ul li a {
 
 /* Novedades y cómo jugar */
 
+/* Contenedor padre para las secciones */
 #bloquemedio {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 20px; /* Espaciado entre secciones */
+    justify-content: space-between; /* Distribuye el espacio */
+    align-items: flex-start;
     width: 100%;
-    margin-bottom: 20px;
 }
 
+/* Contenedor izquierdo: Novedades y Cómo jugar */
+#novedadesycomojugar {
+    display: flex;
+    flex-direction: column; /* Acomoda en columna */
+    width: 50%; /* Ocupa la mitad izquierda */
+    gap: 20px; /* Espaciado entre ambas secciones */
+}
 
-#novedadesycomojugar { 
-    padding: 20px;
+/* Asegura que los elementos ocupen todo el ancho */
+#novedades, #comojugar {
     width: 100%;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
-#novedadesycomojugar #novedades {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    text-align: left;
+/* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
+#comojugar summary::-webkit-details-marker {
+    display: none; /* Oculta el triángulo en WebKit */
 }
 
-#novedadesycomojugar #novedades2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    width: 100%; 
-    text-align: right;
-    margin-left: auto; 
-    flex-grow: 1;
+/* Para Firefox */
+#comojugar summary::marker {
+    display: none; /* Oculta el triángulo en Firefox */
+    content: ""; /* Asegura que no haya contenido residual */
 }
 
-#novedadesycomojugar #comojugar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    width: 100%; 
-    margin-top: 20px; 
-    text-align: left;
-}
 
-#novedadesycomojugar #comojugar2 {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
-    width: 100%; 
-    text-align: right;
-    flex-grow: 1;
+.masinfo summary {
+    background-color: #eb2cde;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Jockey One', sans-serif;
 }
 
 
@@ -131,18 +126,32 @@ h2, h3 {
     padding: 10px;
 }
 
+/*Seecion boton central*/
+.masinfo {
+    background-color: #eb2cde;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-family: 'Jockey One', sans-serif !important; /* Fuerza la fuente */
+    font-weight: normal; /* Asegura que no esté en negrita por error */
+}
+
+
 /* Noticias */
 
 #scroll-noticias {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    max-width: 500px; /* Ajusta este valor según necesites */
+    width: 50%; /* Ocupa todo el ancho del contenedor */
     height: 500px; /* Ajusta la altura según lo que desees */
-    overflow-y: auto; /* Habilita el scroll vertical */
     overflow-x: hidden; /* Evita el scroll horizontal */
     border: 2px solid #ccc; /* Opcional: bordes para darle estilo */
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo con transparencia opcional */
     border-radius: 10px; 
+
 }
 
 #scroll-noticias::-webkit-scrollbar {
@@ -173,7 +182,6 @@ ul li img {
 .ListaDotless{
     list-style: none;
 }
-
 
 /* FAQ */
 

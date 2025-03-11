@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Press Start 2P", system-ui;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
