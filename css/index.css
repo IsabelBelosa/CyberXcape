@@ -90,15 +90,17 @@ nav ul li a {
     text-align: center;
     list-style: none;
     display: inline-block;
+}
+
+#comojugar{
     cursor: pointer;
 }
 
-/* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
 #comojugar summary::-webkit-details-marker {
     display: none; /* Oculta el triángulo en WebKit */
 }
 
-/* Para Firefox */
+
 #comojugar summary::marker {
     display: none; /* Oculta el triángulo en Firefox */
     content: ""; /* Asegura que no haya contenido residual */
@@ -127,17 +129,19 @@ h2, h3 {
 }
 
 /*Seecion boton central*/
-.masinfo {
+.masinfo a{
     background-color: #eb2cde;
+    color: white;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
-    margin-top: 10px;
-    font-size: 1.2em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2em;
     margin-left: 20px;
     font-family: 'Jockey One', sans-serif !important; /* Fuerza la fuente */
-    font-weight: normal; /* Asegura que no esté en negrita por error */
+    text-decoration: none;
 }
 
 
@@ -177,6 +181,7 @@ ul li img {
     object-fit: cover;
     border-radius: 5px;
     list-style-type: none;
+    border: 2px solid #EB2CDE;
 }
 
 .ListaDotless{
