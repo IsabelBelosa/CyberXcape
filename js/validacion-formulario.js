@@ -1,7 +1,7 @@
 //Función que recibe una cadaena y devuelve true si es alfabética y false en caso contrario
 
 function validaresAlfabetico(cadena) {
-    return /^[a-z\sáéíóúñ]+$/.test(cadena);
+    return /^[a-zA-Z\sáéíóúñ]+$/.test(cadena);
 }
 
 //Función que recibe una cadena y devuelve true si es un correo electrónico válido y false en caso contrario
