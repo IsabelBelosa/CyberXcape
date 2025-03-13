@@ -2,7 +2,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: black;
+    background-image: url("../images/candado.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
 }
@@ -74,6 +77,7 @@ nav ul li a {
     justify-content: space-between; /* Distribuye el espacio */
     align-items: flex-start;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Contenedor izquierdo: Novedades y Cómo jugar */
@@ -96,6 +100,13 @@ nav ul li a {
     cursor: pointer;
 }
 
+#comojugar ul{
+    text-align: left;
+    list-style: none;
+    font-size: 2em;
+    font-family: 'Jockey One', sans-serif;
+}
+
 #comojugar summary::-webkit-details-marker {
     display: none; /* Oculta el triángulo en WebKit */
 }
@@ -106,6 +117,10 @@ nav ul li a {
     content: ""; /* Asegura que no haya contenido residual */
 }
 
+#comojugar summary h2:hover {
+    background-color: #eb2cde;
+}
+
 
 .masinfo summary {
     background-color: #eb2cde;
@@ -113,7 +128,6 @@ nav ul li a {
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
-    margin-top: 10px;
     font-size: 1.2em;
     margin-left: 20px;
     font-family: 'Jockey One', sans-serif;
@@ -128,24 +142,16 @@ h2, h3 {
     padding: 10px;
 }
 
-/*Seecion boton central*/
-.masinfo a{
-    background-color: #eb2cde;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 2em;
-    margin-left: 20px;
-    font-family: 'Jockey One', sans-serif !important; /* Fuerza la fuente */
-    text-decoration: none;
-}
+
 
 
 /* Noticias */
+
+#columnDer{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 #scroll-noticias {
     width: 50%; /* Ocupa todo el ancho del contenedor */
@@ -171,7 +177,24 @@ h2, h3 {
     background: #333; /* Color del fondo del scrollbar */
 }
 
-
+/*Seccion boton central en noticias*/
+.masinfo{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.masinfo a{
+    background-color: #eb2cde;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2em;
+    margin-left: 20px;
+    font-family: 'Jockey One', sans-serif !important; /* Fuerza la fuente */
+    text-decoration: none;
+}
 
 /* Estilo de las imágenes dentro de cada noticia */
 ul li img {
