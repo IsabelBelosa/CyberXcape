@@ -116,6 +116,34 @@ input[type="submit"] {
     background: #ffaef9;
 }
 
+/* Estilos personalizados para SweetAlert2 */
+.swal2-popup-custom {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #eb2cde;
+    border-radius: 10px;
+}
+
+.swal2-confirm-button-custom {
+    background-color: #eb2cde;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+.swal2-close-button-custom {
+    color: #7ADEF5 !important;
+}
+
+.swal2-icon-custom .swal2-x-mark-line-left,
+.swal2-icon-custom .swal2-x-mark-line-right {
+    background-color: #7ADEF5 !important;
+}
+
+.swal2-icon-custom {
+    border-color: #7ADEF5 !important;
+}
 
 /* Responsividad */
 @media(max-width: 955px) { 

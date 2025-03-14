@@ -50,10 +50,10 @@ function validarHoras(horas){
 document.addEventListener("DOMContentLoaded", function() {
     let formContacto = document.forms["form_book"];
     let botonReserva = formContacto["botonReserva"];
-    let errores = [];
 
     botonReserva.addEventListener("click", function(event) {
         let esCorrecto = true;
+        let errores = [];
 
         let numJugadores = parseInt(formContacto["inputjugadores"].value);
         let sala = parseInt(formContacto["inputsalas"].value);
@@ -142,10 +142,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         if (!esCorrecto)
-            alert(errores.join("\n"));
-
-        //como errores siempre esta en el evento, para que no se acumulen los errores, se debe limpiar el array
-        errores = [];
+        {
+            // Juntamos todas las cadenas con un salto de línea
+            // y usamos los pop-ups de SweetAlert2 para mostrar los errores
+            // https://sweetalert2.github.io/
+            var CadenaErrores = errores.join("<br>");
+            Swal.fire({
+                title: "Error",
+                html: CadenaErrores,
+                icon: "error",
+                background: '#000000',
+                color: '#ffffff',
+                confirmButtonColor: '#eb2cde',
+                customClass: {
+                    popup: 'swal2-popup-custom',
+                    confirmButton: 'swal2-confirm-button-custom',
+                    closeButton: 'swal2-close-button-custom',
+                    icon: 'swal2-icon-custom'
+                }
+            });
+        }            
 
         event.preventDefault(); // Detener el envío del formulario
     });
