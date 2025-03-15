@@ -255,3 +255,43 @@ ul li img {
     color: #7ADEF5;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    #bloquemedio {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        margin: 0; 
+        padding: 0; 
+    }
+
+    #novedadesycomojugar {
+        width: 100%; 
+        padding: 0; 
+    }
+
+    #novedades, #comojugar {
+        width: 100%; 
+        text-align: center;
+        padding: 0; 
+    }
+
+    #columnDer {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    #scroll-noticias {
+        width: 100%; 
+        height: 300px; 
+        overflow-y: auto; 
+        overflow-x: hidden; 
+        padding: 0; /* Elimina el padding para asegurar que ocupe todo el ancho */
+    }
+
+    /* Aseguramos que las imágenes dentro de las noticias ocupen todo el ancho disponible */
+    ul li img {
+        width: 100%; /* Las imágenes ocuparán el 100% del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+}
