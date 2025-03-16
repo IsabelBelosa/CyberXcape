@@ -26,7 +26,7 @@ h1 {
     font-family: 'Jockey One', sans-serif;
     text-align: center;
     display: inline-block;  /* Ajusta el ancho al tamaño del texto */
-    width: auto;            /* El ancho será solo el necesario para el texto */
+    width: auto;          
     margin: 10px 0;
     border-radius: 10px;
 }
@@ -48,7 +48,7 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Asegurar que los dos elementos se mantengan alineados */
+/* Asegura que los dos elementos se mantengan alineados */
 #nuestrahistoria, #nuestroequipo {
     flex: 1;
     min-width: 300px;
@@ -59,7 +59,7 @@ h1 {
     flex-direction: column;
 }
 
-/* Asegurar que el contenido no se desborde */
+/* Para que el contenido no se desborde */
 #nuestrahistoria p, #nuestrahistoria .masinfo p,
 #nuestroequipo iframe {
     width: auto;
@@ -187,7 +187,7 @@ h1 {
     border-radius: 10px;
 }
 /* ===================== */
-/* RESPONSIVE DESIGN */
+/* RESPONSIVIDAD */
 /* ===================== */
 
 @media screen and (max-width: 955px) {
