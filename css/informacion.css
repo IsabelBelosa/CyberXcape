@@ -13,7 +13,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -95,6 +94,7 @@ h1 {
     display: flex;
     color: #ffffff;
     text-align: center;
+    align-content: center;
 }
 
 .premios {
@@ -210,6 +210,6 @@ h1 {
     }
 
     .bloque1, .bloque2, .bloque3 {
-        width: 95%;
+        width: 100%;
     }
 }
