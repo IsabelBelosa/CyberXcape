@@ -65,8 +65,6 @@ header #superior #apariencia {
     display: block;
 }
 
-/* Estilos para el modo claro */
-
 /* Cambiar el color de las letras en el header #logo a negro */
 .light-mode header #superior #logo {
     color: #000000 !important;
@@ -92,6 +90,16 @@ header #superior #apariencia {
     color: #000000 !important;
 }
 
+/* NO afectar la imagen dentro de #introduccion */
+.light-mode #introduccion img {
+    filter: none !important; 
+    mix-blend-mode: normal !important;
+}
+
+/* Asegurar que el texto dentro de #introduccion siga visible */
+.light-mode #introduccion #texto {
+    color: black !important;
+}
 
 .light-mode footer #titulo1 {
     color: #000000 !important;
@@ -100,12 +108,10 @@ header #superior #apariencia {
 /* Asegurarse de que el texto dentro de un span no cambie de color */
 .light-mode header #superior #titulo span,
 .light-mode footer #titulo1 span {
-    color: inherit; /* El color del texto dentro de span se mantiene sin cambios */
+    color: inherit; /* Sin cambios */
 }
 
-/*-----------------------------------*/
-
-/* También es importante ajustar los estilos generales para el modo claro si es necesario */
+/* Ajustar los estilos generales para el modo claro si es necesario */
 .light-mode div {
     background-color: #f5f5f5 !important; /* Cambiar el fondo solo de los divs */
     color: black !important;
@@ -113,24 +119,14 @@ header #superior #apariencia {
 
 /* Cambiar solo el fondo de los divs en modo claro */
 .light-mode #superior {
-    background-color: #f5f5f5 !important; /* Cambiar fondo solo en el contenedor superior */
+    background-color: #f5f5f5 !important; 
 }
 
 /* Eliminar la imagen de fondo y cambiar a blanco */
-.light-mode body {
-    background-color: #ffffff !important; /* Fondo blanco */
-    background-image: none !important;    /* Elimina cualquier imagen de fondo */
-}
-
-/* Eliminar imagen de fondo en el header */
-.light-mode header {
-    background-image: none !important; /* Eliminar imagen de fondo */
-    background-color: #ffffff !important; /* Fondo blanco */
-}
-
-/* Eliminar imagen de fondo en el footer */
+.light-mode body,
+.light-mode header,
 .light-mode footer {
-    background-image: none !important; /* Eliminar imagen de fondo */
+    background-image: none !important; /* Eliminar solo el fondo */
     background-color: #ffffff !important; /* Fondo blanco */
 }
 
@@ -149,16 +145,12 @@ header #superior #apariencia {
     mix-blend-mode: normal !important;
 }
 
-/* No subrayar el enlace activo */
-header #inferior nav ul li a {
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .light-mode .info-item p, 
 .light-mode .info-item p a{
+    color: #000000 !important;
+}
+
+.light-mode #faq #preguntas details summary{
     color: #000000 !important;
 }
 

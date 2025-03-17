@@ -267,7 +267,7 @@ ul li img {
         height: 300px; 
         overflow-y: auto; 
         overflow-x: hidden; 
-        padding: 0; /* Elimina el padding para asegurar que ocupe todo el ancho */
+        padding: 0; /* Eliminael padding para asegurar que ocupe todo el ancho */
     }
 
     /* Aseguramos que las imágenes dentro de las noticias ocupen todo el ancho disponible */
