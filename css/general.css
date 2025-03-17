@@ -65,22 +65,18 @@ header #superior #apariencia {
     display: block;
 }
 
-/* Cambiar el color de las letras en el header #logo a negro */
 .light-mode header #superior #logo {
     color: #000000 !important;
 }
 
-/* Cambiar el color de la imagen de apariencia a rosa */
 .light-mode header #superior #apariencia {
     filter: invert(32%) sepia(96%) saturate(561%) hue-rotate(321deg) brightness(96%) contrast(97%) !important;
 }
 
-/* Cambiar los colores de las imágenes dentro del header que tienen la clase .logo */
 .light-mode header .logo {
-    filter: invert(100%) !important; /* Esto invierte los colores de las imágenes */
+    filter: invert(100%) !important; 
 }
 
-/* Cambiar el color de los textos en los id="titulo" y "titulo1" a negro */
 .light-mode header #superior #titulo{
     color: #000000 !important;
 }
@@ -90,13 +86,11 @@ header #superior #apariencia {
     color: #000000 !important;
 }
 
-/* NO afectar la imagen dentro de #introduccion */
 .light-mode #introduccion img {
     filter: none !important; 
     mix-blend-mode: normal !important;
 }
 
-/* Asegurar que el texto dentro de #introduccion siga visible */
 .light-mode #introduccion #texto {
     color: black !important;
 }
@@ -105,13 +99,11 @@ header #superior #apariencia {
     color: #000000 !important;
 }
 
-/* Asegurarse de que el texto dentro de un span no cambie de color */
 .light-mode header #superior #titulo span,
 .light-mode footer #titulo1 span {
     color: inherit; /* Sin cambios */
 }
 
-/* Ajustar los estilos generales para el modo claro si es necesario */
 .light-mode div {
     background-color: #f5f5f5 !important; /* Cambiar el fondo solo de los divs */
     color: black !important;
@@ -126,8 +118,8 @@ header #superior #apariencia {
 .light-mode body,
 .light-mode header,
 .light-mode footer {
-    background-image: none !important; /* Eliminar solo el fondo */
-    background-color: #ffffff !important; /* Fondo blanco */
+    background-image: none !important; 
+    background-color: #ffffff !important; 
 }
 
 .light-mode header #superior #apariencia {
@@ -180,7 +172,6 @@ header #inferior nav ul li a {
     z-index: 20;
 }
 
-/*-----------------------------------*/ 
 
 /*Estilos footer*/
 footer {
@@ -241,25 +232,22 @@ footer #contact-info span a {
 }
 
 
-/*-----------------------------------*/
-
 /*Estilos barra lateral*/
 
-/* Estilo general de la barra */
 ::-webkit-scrollbar {
     width: 10px; /* Ancho de la barra vertical */
-    height: 10px; /* Altura de la barra horizontal (si existe) */
+    height: 10px; 
 }
 
 /* Color de fondo de la barra */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color de fondo */
-    border-radius: 5px; /* Bordes redondeados */
+    background: #f1f1f1; 
+    border-radius: 5px; 
 }
 
-/* Color y diseño del "pulgar" (la parte que se mueve) */
+/* Color y diseño de la parte que se mueve) */
 ::-webkit-scrollbar-thumb {
-    background: #EB2CDE; /* Color del pulgar */
+    background: #EB2CDE; 
     border-radius: 5px;
 }
 
@@ -268,7 +256,6 @@ footer #contact-info span a {
     background: #7ADEF5;
 }
 
-/*-----------------------------------*/
 
 /* Responsividad */
 @media (max-width: 955px) {

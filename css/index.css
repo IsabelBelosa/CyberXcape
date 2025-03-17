@@ -78,7 +78,7 @@ h2, h3 {
     display: flex;
     flex-direction: column; 
     width: 50%; /* Ocupa la mitad izquierda */
-    gap: 20px; /* Espaciado entre ambas secciones */
+    gap: 20px; 
 }
 
 /* Asegura que los elementos ocupen todo el ancho */
@@ -151,11 +151,11 @@ h2, h3 {
 
 #scroll-noticias::-webkit-scrollbar-thumb {
     background-color: #EB2CDE; /* Color del scrollbar */
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
 }
 
 #scroll-noticias::-webkit-scrollbar-track {
-    background: #333; /* Color del fondo del scrollbar */
+    background: #333; 
 }
 
 /*Seccion boton central en noticias*/
@@ -267,12 +267,12 @@ ul li img {
         height: 300px; 
         overflow-y: auto; 
         overflow-x: hidden; 
-        padding: 0; /* Eliminael padding para asegurar que ocupe todo el ancho */
+        padding: 0; /* Elimina el padding para asegurar que ocupe todo el ancho */
     }
 
-    /* Aseguramos que las imágenes dentro de las noticias ocupen todo el ancho disponible */
+    /* Las imágenes dentro de las noticias ocupen todo el ancho disponible */
     ul li img {
         width: 100%; /* Las imágenes ocuparán el 100% del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        height: auto; 
     }
 }
