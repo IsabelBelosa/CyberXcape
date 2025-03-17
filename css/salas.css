@@ -51,12 +51,12 @@ main {
 }
 
 .salasIzquierda span, .salasDerecha span {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 20px;
 }
 
 .salasIzquierda p, .salasDerecha p {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 20px;
 }
 
@@ -67,6 +67,9 @@ main {
     margin: 20px;
 }
 
+li{
+    font-size: 1.2em;
+}
 
 .tabla table {
     width: 100%;
@@ -89,13 +92,14 @@ main {
 /* Botón de más información */
 .masInfo summary {
     background-color: #eb2cde;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-left: 20px;
 }
 
