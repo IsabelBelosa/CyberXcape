@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let esCorrecto = true;
         let errores = [];
 
-        let numJugadores = parseInt(formContacto["inputjugadores"].value);
+        let num_jugadores = parseInt(formContacto["inputjugadores"].value);
         let sala = parseInt(formContacto["inputsalas"].value);
         let nombre = formContacto["inputnombre"].value;
         let apellido = formContacto["inputapellidos"].value;
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // validacion de cada campo
         //Número de jugadores
-        if (!validarNumeroJugadores(sala, numJugadores)) {
+        if (!validarNumeroJugadores(sala, num_jugadores)) {
             esCorrecto = false;
             errores.push("El número de jugadores no es válido");
             //añadir la clase error al input
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         //Horas
-        if (!validarHoras(horas)){
+        if (!validarHoras(horas) || horas.length === 0) {
             esCorrecto = false;
             errores.push("Las horas seleccionadas no son consecutivas");
         }
@@ -161,7 +161,71 @@ document.addEventListener("DOMContentLoaded", function() {
                     icon: 'swal2-icon-custom'
                 }
             });
-        }            
+        }
+        else // Si los datos son correctos, se envía la reserva al servidor
+        {
+            // Creamos un objeto reserva con los datos del formulario
+            let reserva = {};
+
+            reserva.num_jugadores = parseInt(formContacto["inputjugadores"].value);
+            
+            // Parsear la sala seleccionada
+            switch (formContacto["inputsalas"].value) {
+                case "1":
+                    reserva.sala = "Neutral Hack";
+                    break;
+                case "2":
+                    reserva.sala = "Estación Omega";
+                    break;
+                case "3":
+                    reserva.sala = "Experimento X-33";
+                    break;
+            }
+
+
+            // Parsear la dificultad seleccionada
+            switch (formContacto["inputdificultad"].value) {
+                case "1":
+                    reserva.dificultad = "Facil";
+                    break;
+                case "2":
+                    reserva.dificultad = "Intermedio";
+                    break;
+                case "3":
+                    reserva.dificultad = "Dificil";
+                    break;
+            }
+
+            reserva.nombre = formContacto["inputnombre"].value;
+            reserva.apellidos = formContacto["inputapellidos"].value;
+            reserva.correo = formContacto["inputcorreo"].value;
+            reserva.fecha = formContacto["inputfecha"].value;
+
+            let checkboxes = document.querySelectorAll('#horas input[type="checkbox"]');
+            let horas = [];
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    switch (checkboxes[i].value) {
+                        case "1":
+                            horas.push("16:00h");
+                            break;
+                        case "2":
+                            horas.push("17:00h");
+                            break;
+                        case "3":
+                            horas.push("18:00h");
+                            break;
+                        case "4":
+                            horas.push("19:00h");
+                            break;
+                    }
+                }
+            }
+            reserva.horas = horas;
+
+            // Enviamos la reserva al servidor
+            postReservas(reserva);
+        }  
 
         event.preventDefault(); // Detener el envío del formulario
     });
