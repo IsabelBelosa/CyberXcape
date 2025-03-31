@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!-- Contiene metadatos -->
+    <meta name="keywords" content="escaperoom, salas, futurista">
+    <meta name="description" content="Adéntrate en un mundo donde la tecnología y el misterio se entrelazan. En este scape room futurista, tendrás que descifrar códigos, hackear sistemas y desentrañar secretos ocultos. ¿Lograrás escapar antes de que el tiempo se agote?¡Vive la aventura más innovadora en Cádiz!">
+    <meta name="subject" content="escaperoom">
+    <meta name="copyright" content="CyberXcape">
+    <meta name="author" content="CyberXcape, CyberXcape@gmail.com">
+    <meta name="designer" content="CyberXcape, CyberXcape@gmail.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sale=1.0">
+    <!--fuentes de letras-->
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Enlaces a los archivos CSS -->
+    <link href="css/general.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <!-- Enlace a la hoja de scripts -->
+    <script src="js/hamburguesa.js"></script>
+    <script src="js/apariencia.js" defer></script>
+    <!--Titulo que se muestra en la pestaña del buscador-->
+    <title>CyberXcape-Inicio</title>
+</head>
+<body> <!-- Contiene header(cabecera de la página superior e inferior(indice)), main y footer(cabecera inferior) -->
+    <header>
+        <div id="superior">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo de CyberXcape" width="40" height="60" class="logo">
+            </a>
+            <span id="titulo">CYBER<span id="X">X</span>CAPE</span>
+            
+            <img src="./images/apariencia.jpg" alt="Apariencia" id="apariencia">
+        </div>
+        <!-- Icono de menú hamburguesa -->
+        <div class="menu-icon" id="menu-icon">
+            &#9776;
+        </div>
+        <div id="inferior">
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html" class="subrayado">INICIO</a></li>
+                    <li><a href="salas.html">SALAS</a></li>
+                    <li><a href="reserva.html">RESERVAS</a></li>
+                    <li><a href="informacion.html">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main> <!-- Contiene la sección principal de la página -->
+        <!-- Introducción: Presentación visual y título atractivo -->
+        <div id="introduccion">
+            <img src="./images/cronometro2.gif" alt="Cronometro rosa" id="cronometro"> <!-- Imagen de un cronómetro rosa -->
+            <div id="texto">¿Podrás vencer a la IA antes de que sea demasiado tarde?</div> 
+        </div>
+        <div id="bloquemedio">
+            <div id="novedadesycomojugar"> <!-- Sección de novedades y cómo jugar -->
+                <div id="novedades">
+                    <summary><h2>NOVEDADES</h2> </summary>
+                    <p>¡EVENTO TEMÁTICO!</p>
+                    <p>ORGANIZAMOS NUEVAS PARTIDAS ESPECIALES CON DESAFÍOS Y VERSIONES ALTERNATIVAS DEL JUEGO</p>
+                </div>
+                <div id="comojugar">
+                    <details>
+                        <summary><h2>+ ¿CÓMO JUGAR?</h2></summary>
+                        <ul>
+                            <li>💃FORMA UN EQUIPO</li>
+                            <li>🔎SIGUE LAS PISTAS</li>
+                            <li>🧩RESUELVE ACERTIJOS</li>
+                            <li>⌛ESCAPA ANTES DE QUE SE ACABE EL TIEMPO⌛</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div id="scroll-noticias"> <!-- Sección barra lateral -->
+                <aside class="noticias"> <!-- Sección de noticias complementaria (uso de aside)-->
+                    <h3 id="vernoticia"> NOTICIAS</h3> <!-- Summary Cada noticia está dentro de un <div> con imágenes y descripciones, siendo esta un summary (desplegable interactivo) -->
+                        <ul class="ListaDotless"> 
+                            <li>
+                                <img src="./images/escaperoom1.jpg" alt="sala1" id="sala1">
+                                <p>¿Lograron escapar o quedaron atrapados en la red de acertijos de la IA? ¡NUEVA SALA DISPONIBLE!</p>
+                            </li>
+                            <li>
+                                <img src="./images/cerebrito.png" alt="logo de cerebro" id="cerebrito">
+                                <p>¿ACEPTAS EL DESAFÍO?</p>
+                            </li>
+                            <li>
+                                <img src="./images/escaperoom2.jpg" alt="sala2" id="sala2">
+                                <p>¡DESCUBRE NUESTRA SALA DE ESCAPE MÁS DESAFIANTE Y VIVE UNA EXPERIENCIA INOLVIDABLE!</p>
+                            </li>
+                        </ul>
+                </aside>
+            </div>
+        </div>
+        <div class="masinfo">
+            <a href="reserva.html">CLICK AQUÍ PARA RESERVAR</a>
+        </div>
+        <div id="faq"> <!-- Sección de preguntas frecuentes -->
+            <div id="preguntas">
+                <h3>FAQ</h3> <!-- Cada pregunta frecuente está dentro de un <div> con respuestas, siendo esta un summary (desplegable interactivo) -->
+                    <details>
+                        <summary>+ ¿ES APTO PARA PRINCIPIANTES?</summary>
+                        <p>El juego tiene pistas y ayudas para que todos disfruten la experiencia.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿HAY EDADES RECOMENDADAS?</summary>
+                        <p>Recomendado para mayores de 12 años. Los menores pueden participar acompañados de un adulto.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿PODEMOS JUGAR EN DIFERENTES IDIOMAS?</summary>
+                        <p>Nuestra IA se adapta a distintos idiomas para que todos puedan participar.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿QUÉ PASA SI NO LOGRAMOS SALIR A TIEMPO?</summary>
+                        <p>La IA te atrapará… pero no te preocupes, nuestro equipo te guiará fuera de la sala.</p>
+                    </details>
+            
+                    <details>
+                        <summary>+ ¿ES ACCESIBLE PARA PERSONAS CON MOVILIDAD REDUCIDA?</summary>
+                        <p>Nuestro escape room está diseñado para que todos puedan desafiar a la IA.</p>
+                    </details>
+            </div>
+            <img src="./images/candado.jpg" alt="Candado" id="candado"> <!-- Imagen de un candado para el fondo-->
+        </div>  
+    </main>
+    <footer>
+        <div id="logo-copy">
+            <img src="./images/logo.png" alt="Logo de CyberXcape" width="20" height="40" class="logo">
+            <span>Copyright &copy; 2025</span>
+        </div>
+        <span id="titulo1">CYBER<span id="X1">X</span>CAPE</span>
+    <!-- Redes sociales y contacto -->
+        <div id="contact-info">
+            <span><img src="./images/logoinstagram.webp" alt="Logo de Instagram" id="instagram1"><a href="https://www.instagram.com/CyberXcape" target="_blank">@CyberXcape</a></span>
+            <span><img src="./images/email.jpg" alt="Logo de Email" id="email"><a href="mailto:CyberXcape@gmail.com">CyberXcape@gmail.com</a></span>
+            <span><img src="./images/telefono.jpg" alt="Logo de Telefono" id="telefono"><a href="tel:657883069">657 88 30 69</a> / <a href="tel:956122344">956 12 23 44</a></span>
+        </div>
+    </footer>
+</body>
+</html>

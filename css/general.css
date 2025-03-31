@@ -1,0 +1,316 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Estilos header*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #000000;
+}
+
+header #superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header #superior #logo {
+    display: flex;
+    align-items: center;
+}
+
+header #superior #titulo {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-family: "Press Start 2P", system-ui;
+}
+
+header #superior #titulo #X {
+    font-size: 2.5em;
+    color: #EB2CDE;
+    font-family: "Press Start 2P", system-ui;
+}
+
+header #inferior {
+    background-color: #B1B1B1;
+}
+
+header #inferior nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header #inferior nav ul li {
+    padding: 10px 20px;
+}
+
+/*Estilos modo claro*/
+header #superior #apariencia {
+    cursor: pointer; 
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.light-mode header #superior #logo {
+    color: #000000 !important;
+}
+
+.light-mode header #superior #apariencia {
+    filter: invert(32%) sepia(96%) saturate(561%) hue-rotate(321deg) brightness(96%) contrast(97%) !important;
+}
+
+.light-mode header .logo {
+    filter: invert(100%) !important; 
+}
+
+.light-mode header #superior #titulo{
+    color: #000000 !important;
+}
+
+.light-mode #contact-info span,
+.light-mode #contact-info a {
+    color: #000000 !important;
+}
+
+.light-mode #introduccion img {
+    filter: none !important; 
+    mix-blend-mode: normal !important;
+}
+
+.light-mode #introduccion #texto {
+    color: black !important;
+}
+
+.light-mode footer #titulo1 {
+    color: #000000 !important;
+}
+
+.light-mode header #superior #titulo span,
+.light-mode footer #titulo1 span {
+    color: inherit; /* Sin cambios */
+}
+
+.light-mode div {
+    background-color: #f5f5f5 !important; /* Cambiar el fondo solo de los divs */
+    color: black !important;
+}
+
+/* Cambiar solo el fondo de los divs en modo claro */
+.light-mode #superior {
+    background-color: #f5f5f5 !important; 
+}
+
+/* Eliminar la imagen de fondo y cambiar a blanco */
+.light-mode body,
+.light-mode header,
+.light-mode footer {
+    background-image: none !important; 
+    background-color: #ffffff !important; 
+}
+
+.light-mode header #superior #apariencia {
+    filter: invert(32%) sepia(96%) saturate(561%) hue-rotate(321deg) brightness(96%) contrast(97%);
+}
+
+.light-mode #header #superior #titulo img {
+    filter: invert(1);
+}
+
+/* Evitar que las imágenes se inviertan */
+.light-mode header img,
+.light-mode footer img {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+}
+
+.light-mode .info-item p, 
+.light-mode .info-item p a{
+    color: #000000 !important;
+}
+
+.light-mode #faq #preguntas details summary{
+    color: #000000 !important;
+}
+
+/* No subrayar el enlace activo */
+header #inferior nav ul li a {
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.subrayado {
+    border-bottom: 3px solid #000000;
+}
+
+
+/* Estilos para el icono del menú hamburguesa */
+.menu-icon {
+    display: none; /* Oculto por defecto */
+    font-size: 2em;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 20;
+}
+
+
+/*Estilos footer*/
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+footer #logo-copy img {
+    max-height: 70px;
+}
+
+footer #logo-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #titulo1 {
+    margin-left: 5%;
+    font-size: 1em;
+    color: #ffffff;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    flex: 1;
+}
+
+footer #titulo1 #X1 {
+    font-size: 3em;
+    color: #EB2CDE;
+}
+
+footer #contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer #contact-info span {
+    margin-bottom: 10px;
+}
+
+footer #contact-info span img {
+    max-height: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+footer #contact-info span a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/*Estilos barra lateral*/
+
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra vertical */
+    height: 10px; 
+}
+
+/* Color de fondo de la barra */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px; 
+}
+
+/* Color y diseño de la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+    background: #EB2CDE; 
+    border-radius: 5px;
+}
+
+/* Cambia el color al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #7ADEF5;
+}
+
+
+/* Responsividad */
+@media (max-width: 955px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    #superior {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Aparece el icono del menú hamburguesa*/
+
+    .menu-icon {
+        display: block; /* Aparece en pantallas pequeñas */
+    }
+
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #B1B1B1;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    #nav-list.open {
+        max-height: 300px; /* Ajusta según el contenido */
+    }
+
+    #nav-list li {
+        padding: 15px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer #titulo1 {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    footer #logo-copy img {
+        padding-left: 0;
+    }
+}
